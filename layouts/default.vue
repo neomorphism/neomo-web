@@ -17,7 +17,7 @@
 
       <!-- Header-version Start -->
       <div style="max-width: 10px; margin: auto; margin-left: 20px">
-        <span style="color: grey; font-size: 0.86rem">v0.0.1</span>
+        <span style="color: grey; font-size: 0.86rem">v1.0.0</span>
       </div>
       <!-- Header-version End -->
 
@@ -61,16 +61,20 @@
     <!-- Contents End -->
 
     <!-- Footer Start -->
-    <footer absolute class="footer">
-      <div flat tile width="100%">
-        <div class="pt-10">
-          <i class="fab fa-github" size="30px"></i>
+    <footer class="footer">
+      <div>
+        <div class="footer-icon">
+          <a href="https://github.com/neomorphism/neomo">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="/"><i class="fab fa-facebook fa-2x ml-10 mr-10"></i></a>
+          <a href="/"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
 
         <div class="mb-0 footer-font">
           Designed and built with all the love in the world by the
           <a
-            class="pt-3"
+            class="mt-3"
             href="https://github.com/neomorphism/neomo"
             style="color: grey"
             >AST
@@ -80,8 +84,10 @@
             >Our Contributors</a
           >.
 
-          <div class="pt-5">Currently v1.0.0 - beta.</div>
-          <div>Released under the <a style="color: grey">MIT License.</a></div>
+          <p class="mt-5">Currently v1.0.0 - beta.</p>
+          <p class="pb-10">
+            Released under the <a style="color: grey">MIT License.</a>
+          </p>
         </div>
       </div>
     </footer>
@@ -118,6 +124,10 @@ export default {}
 }
 
 a,
+a:link,
+a:visited,
+a:active,
+a:hover,
 hr {
   margin: auto;
   text-decoration: none;
@@ -130,11 +140,24 @@ hr {
   margin-right: 8px;
 }
 #content-layout {
-  margin: 56px 350px 250px 350px !important;
+  margin: 56px 350px 0 350px !important;
 }
 
 .footer {
   background: #212121;
   color: rgb(216, 216, 216);
+  text-align: center;
+  width: 100%;
+}
+.footer p {
+  margin-bottom: 5px;
+}
+.footer-icon {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-icon > a {
+  color: rgb(209, 209, 209);
 }
 </style>
