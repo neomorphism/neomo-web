@@ -14,22 +14,15 @@
 
       <div style="margin-bottom: 50px">
         <span class="font" style="width: 100vw">WELCOME TO</span>
-        <p
-          style="
-            font-weight: 900;
-            font-size: 6rem;
-            margin-top: 5px;
-            margin-bottom: 0;
-          "
-        >
-          NEOMO
-        </p>
+        <p class="font-name">NEOMO</p>
         <div style="margin-top: 30px">
-          <p>
+          <p class="font-content">
             Neomo is a reactive framework designed to help developers develop
             web and app designs with neomorphism.
           </p>
-          <p style="margin-top: 10px">Try using it right now.</p>
+          <p class="font-content" style="margin-top: 30px">
+            Try using it right now.
+          </p>
         </div>
       </div>
 
@@ -69,6 +62,18 @@ export default {}
 .font {
   font-size: 2.5rem;
   color: rgb(117, 117, 117);
+}
+
+.font-name {
+  font-weight: 900;
+  font-size: 6rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.font-content {
+  font-size: 1.2rem;
+  color: black;
 }
 /* font Custom CSS End */
 
