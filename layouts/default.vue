@@ -43,9 +43,9 @@
     </header>
     <!-- Header End -->
 
-    <!-- Contents Start -->
-    <main id="content-layout" class="pb-0">
-      <div class="content">
+    <!-- main Start -->
+    <main id="main-layout" class="pb-0">
+      <div class="main">
         <nuxt />
       </div>
     </main>
@@ -141,7 +141,7 @@ export default {}
 }
 
 /* Content CSS Start */
-#content-layout {
+#main-layout {
   margin: 56px 350px 0 350px !important;
 }
 
