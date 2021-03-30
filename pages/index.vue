@@ -1,6 +1,6 @@
 <template>
   <div class="neomo">
-    <div class="main-body" style="padding: 80px 0 80px 0">
+    <div class="main-body">
       <!-- Logo Start-->
       <div>
         <img
@@ -53,8 +53,8 @@ export default {}
   text-align: center;
   height: auto;
   margin: 0;
-  width: 100vw;
   background-color: #eff8ff;
+  padding: 80px 0 80px 0;
 }
 /* body Custom CSS End */
 
@@ -103,6 +103,6 @@ export default {}
 /* Button Custom CSS End */
 
 #content-layout {
-  margin: 56px 0 210px 0 !important;
+  margin: 56px 0 0 0 !important;
 }
 </style>
