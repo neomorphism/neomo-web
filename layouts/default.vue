@@ -30,15 +30,7 @@
           style="padding: 8px; margin: 11px; width: 300px"
         />
         <!-- Header-searchbar End -->
-        <hr
-          aria-orientation="vertical"
-          style="
-            border: thin solid rgb(200, 200, 200);
-            height: 20px;
-            margin-left: 15px;
-            margin-right: 15px;
-          "
-        />
+        <hr class="header-hr" />
         <!-- Header-menu Start -->
         <a href="/table" class="header-btn"
           ><span class="font-color btn__content"> STORE </span></a
@@ -132,7 +124,12 @@ hr {
   margin: auto;
   text-decoration: none;
 }
-
+.header-hr {
+  border: thin solid rgb(200, 200, 200);
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
 .header-btn {
   color: rgb(179, 179, 179);
   padding: 5px;
