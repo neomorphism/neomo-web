@@ -1,0 +1,67 @@
+/* Simple Button Section Information */
+
+/*
+* Title : Button component
+* Description : this is Button
+*/
+
+.button {
+    /* min-width: 100px;
+    min-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px; */
+
+    justify-content: center;
+    align-items: center;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.button:hover {
+    outline: 0;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+button.square {
+    border-radius: 0px !important;
+}
+
+button.normal {
+    min-width: 100px;
+    min-height: 50px;
+}
+
+button.small {
+    min-width: 50px;
+    min-height: 50px;
+}
+
+button.medium {
+    min-width: 110px;
+    min-height: 60px;
+}
+
+button.large {
+    min-width: 130px;
+    min-height: 70px;
+}
+
+.bg-gray {
+    background: #e0e0e0;
+}
+
+.bg-dark {
+    background: #464646;
+}
+
+.bg-blue {
+    background: #eff8ff;
+}
+
+/* Button component FINISH */
