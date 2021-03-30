@@ -4,11 +4,11 @@
     <header class="header">
       <!-- Header-logo Start -->
       <div class="ml-1">
-        <div style="min-width: 200px; display: flex">
-          <div style="max-height: 56px; max-width: 48px">
+        <div class="header-logo">
+          <div class="header-logo--icon">
             <img src="blacklogo2.png" />
           </div>
-          <div style="margin: auto; max-height: 48px; max-width: 150px">
+          <div class="header-logo--name">
             <img src="logoname1.png" />
           </div>
         </div>
@@ -16,18 +16,17 @@
       <!-- Header-logo End -->
 
       <!-- Header-version Start -->
-      <div style="max-width: 10px; margin: auto; margin-left: 20px">
-        <span style="color: grey; font-size: 0.86rem">v1.0.0</span>
+      <div class="header-version">
+        <span>v1.0.0</span>
       </div>
       <!-- Header-version End -->
 
       <div class="mr-2" style="display: flex">
         <!-- Header-searchbar Start -->
         <input
-          class="input input-inset"
+          class="input header-searchbar"
           type="text"
           placeholder="Search Neomo"
-          style="padding: 8px; margin: 11px; width: 300px"
         />
         <!-- Header-searchbar End -->
         <hr class="header-hr" />
@@ -46,7 +45,7 @@
 
     <!-- Contents Start -->
     <main id="content-layout" class="pb-0">
-      <div style="transform-origin: center top 0">
+      <div class="content">
         <nuxt />
       </div>
     </main>
@@ -65,21 +64,12 @@
 
         <div class="mb-0 footer-font">
           Designed and built with all the love in the world by the
-          <a
-            class="mt-3"
-            href="https://github.com/neomorphism/neomo"
-            style="color: grey"
-            >AST
-          </a>
+          <a class="mt-3" href="https://github.com/neomorphism/neomo">AST </a>
           with the help of
-          <a href="https://github.com/neomorphism/neomo" style="color: grey"
-            >Our Contributors</a
-          >.
+          <a href="https://github.com/neomorphism/neomo">Our Contributors</a>.
 
           <p class="mt-5">Currently v1.0.0 - beta.</p>
-          <p class="pb-10">
-            Released under the <a style="color: grey">MIT License.</a>
-          </p>
+          <p class="pb-10">Released under the <a>MIT License.</a></p>
         </div>
       </div>
     </footer>
@@ -99,6 +89,7 @@ export default {}
   margin: 0;
 }
 
+/* Header CSS Start */
 .header {
   display: flex;
   height: 56px;
@@ -108,21 +99,33 @@ export default {}
   top: 0;
   background-color: white;
 }
-
-.input-inset {
+.header-logo {
+  min-width: 200px;
+  display: flex;
+}
+.header-logo--icon {
+  max-height: 56px;
+  max-width: 48px;
+}
+.header-logo--name {
+  margin: auto;
+  max-height: 48px;
+  max-width: 150px;
+}
+.header-version {
+  max-width: 10px;
+  margin: auto;
+  margin-left: 20px;
+  color: grey;
+  font-size: 0.86rem;
+}
+.header-searchbar {
   border: none;
   border-radius: 10px;
   box-shadow: inset 1px 1px 2px #b8b9be, inset -1px -1px 2px #fff;
-}
-
-a,
-a:link,
-a:visited,
-a:active,
-a:hover,
-hr {
-  margin: auto;
-  text-decoration: none;
+  padding: 8px;
+  margin: 11px;
+  width: 300px;
 }
 .header-hr {
   border: thin solid rgb(200, 200, 200);
@@ -133,18 +136,24 @@ hr {
 .header-btn {
   color: rgb(179, 179, 179);
   padding: 5px;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 12px !important;
+  margin-right: 12px !important;
 }
+
+/* Content CSS Start */
 #content-layout {
   margin: 56px 350px 0 350px !important;
 }
 
+/* Footer CSS Start */
 .footer {
   background: #212121;
   color: rgb(216, 216, 216);
   text-align: center;
   width: 100%;
+}
+.footer a {
+  color: gray;
 }
 .footer p {
   margin-bottom: 5px;
@@ -156,5 +165,15 @@ hr {
 }
 .footer-icon > a {
   color: rgb(209, 209, 209);
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover,
+hr {
+  margin: auto;
+  text-decoration: none;
 }
 </style>
