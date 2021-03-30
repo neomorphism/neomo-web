@@ -41,11 +41,11 @@
         />
         <!-- Header-menu Start -->
         <a href="/table" class="header-btn"
-          ><span class="font-color v-btn__content"> STORE </span></a
+          ><span class="font-color btn__content"> STORE </span></a
         ><a href="/" class="header-btn"
-          ><span class="font-color v-btn__content"> TEAM </span></a
+          ><span class="font-color btn__content"> TEAM </span></a
         ><a href="/" class="header-btn"
-          ><span class="font-color v-btn__content"> OPTION </span></a
+          ><span class="font-color btn__content"> OPTION </span></a
         >
         <!-- Header-menu End -->
       </div>
@@ -53,18 +53,45 @@
     <!-- Header End -->
 
     <!-- Contents Start -->
-    <div id="content-layout" class="pb-0">
+    <main id="content-layout" class="pb-0">
       <div style="transform-origin: center top 0">
         <nuxt />
       </div>
-    </div>
+    </main>
     <!-- Contents End -->
 
     <!-- Footer Start -->
-    <div></div>
+    <footer absolute class="footer">
+      <div flat tile width="100%">
+        <div class="pt-10">
+          <i class="fab fa-github" size="30px"></i>
+        </div>
+
+        <div class="mb-0 footer-font">
+          Designed and built with all the love in the world by the
+          <a
+            class="pt-3"
+            href="https://github.com/neomorphism/neomo"
+            style="color: grey"
+            >AST
+          </a>
+          with the help of
+          <a href="https://github.com/neomorphism/neomo" style="color: grey"
+            >Our Contributors</a
+          >.
+
+          <div class="pt-5">Currently v1.0.0 - beta.</div>
+          <div>Released under the <a style="color: grey">MIT License.</a></div>
+        </div>
+      </div>
+    </footer>
     <!-- Footer End -->
   </div>
 </template>
+
+<script>
+export default {}
+</script>
 
 <style>
 *,
@@ -104,5 +131,10 @@ hr {
 }
 #content-layout {
   margin: 56px 350px 250px 350px !important;
+}
+
+.footer {
+  background: #212121;
+  color: rgb(216, 216, 216);
 }
 </style>
