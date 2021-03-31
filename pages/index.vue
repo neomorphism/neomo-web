@@ -101,4 +101,8 @@ export default {}
 #main-layout {
   margin: 56px 0 0 0 !important;
 }
+.main {
+  width: 100vw;
+  padding: 0;
+}
 </style>
