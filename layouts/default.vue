@@ -142,15 +142,18 @@ export default {}
 
 /* Content CSS Start */
 #main-layout {
-  margin: 56px 350px 0 350px !important;
+  margin: 56px 0 0 0 !important;
 }
-
+.main {
+  width: 950px;
+  margin: auto;
+  padding: 20px 50px 50px 50px;
+}
 /* Footer CSS Start */
 .footer {
   background: #212121;
   color: rgb(216, 216, 216);
   text-align: center;
-  width: 100%;
 }
 .footer a {
   color: gray;
