@@ -1,5 +1,5 @@
 <template>
-  <div class="neomo">
+  <div style="width: 870px; margin: auto">
     <h1 style="padding-top: 30px; padding-bottom: 20px">#Table</h1>
     <client-only>
       <p>You can easily create a table by looking at the following examples.</p>
