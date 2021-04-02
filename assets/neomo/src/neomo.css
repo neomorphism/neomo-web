@@ -2,6 +2,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 @import "./color.css";
 @import "./components/alert.css";
+@import "./components/breadcrumb.css";
 @import "./content/table.css";
 @import "./components/badge.css";
 @import "./components/button.css";
@@ -21,8 +22,10 @@
 @import "./forms/checkbox.css";
 @import "./forms/file.css";
 @import "./forms/input.css";
+@import "./forms/labels.css";
 @import "./forms/radio.css";
 @import "./forms/range.css";
+@import "./helpers/typography.css";
 @import "./layout/layout.css";
 
 /* Common Section */
@@ -230,24 +233,24 @@ body {
 * Title : margin
 * Description : defined margin basic class
 */
-.m-auto{
-  margin:auto!important;
+.m-auto {
+  margin: auto !important;
 }
 
-.ml-auto{
-  margin-left:auto!important;
+.ml-auto {
+  margin-left: auto !important;
 }
 
-.mr-auto{
-  margin-right:auto!important;
+.mr-auto {
+  margin-right: auto !important;
 }
 
-.mt-auto{
-  margin-top:auto!important;
+.mt-auto {
+  margin-top: auto !important;
 }
 
-.mb-auto{
-  margin-bottom:auto!important;
+.mb-auto {
+  margin-bottom: auto !important;
 }
 
 .m-0,
