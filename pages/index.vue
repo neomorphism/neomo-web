@@ -36,6 +36,29 @@
       </div>
       <!-- Button End -->
     </div>
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div>
+        <div class="footer-icon">
+          <a href="https://github.com/neomorphism/neomo">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="/"><i class="fab fa-facebook fa-2x ml-10 mr-10"></i></a>
+          <a href="/"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+
+        <div class="mb-0 footer-font">
+          Designed and built with all the love in the world by the
+          <a class="mt-3" href="https://github.com/neomorphism/neomo">AST </a>
+          with the help of
+          <a href="https://github.com/neomorphism/neomo">Our Contributors</a>.
+
+          <p class="mt-5">Currently v1.0.0 - beta.</p>
+          <p class="pb-10">Released under the <a>MIT License.</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
   </div>
 </template>
 
@@ -98,11 +121,39 @@ export default {}
   box-shadow: inset 5px 5px 9px #cad3da, inset -5px -5px 9px #ebf1f5 !important;
 }
 
+/* Footer CSS Start */
+.footer {
+  background: #212121;
+  color: rgb(216, 216, 216);
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+.footer a {
+  color: gray;
+}
+.footer p {
+  margin-bottom: 5px;
+}
+.footer-icon {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-icon > a {
+  color: rgb(209, 209, 209);
+}
+
 #main-layout {
   margin: 56px 0 0 0 !important;
 }
 .main {
   width: 100vw;
   padding: 0;
+}
+
+/* Left Navigation Start */
+.left-nav {
+  display: none;
 }
 </style>
