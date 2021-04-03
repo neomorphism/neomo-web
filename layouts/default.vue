@@ -43,42 +43,35 @@
     </header>
     <!-- Header End -->
 
-    <!-- main Start -->
-    <main id="main-layout" class="pb-0">
-      <div class="main">
-        <nuxt />
-      </div>
-    </main>
-    <!-- Contents End -->
+    <div id="main-layout" class="colunm neomo" style="display: flex">
+      <!-- Left Navigation Start -->
+      <div class="container content-nav"><Leftnav /></div>
+      <!-- Left Navigation End -->
 
-    <!-- Footer Start -->
-    <footer class="footer">
-      <div>
-        <div class="footer-icon">
-          <a href="https://github.com/neomorphism/neomo">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-          <a href="/"><i class="fab fa-facebook fa-2x ml-10 mr-10"></i></a>
-          <a href="/"><i class="fab fa-instagram fa-2x"></i></a>
+      <!-- main Start -->
+      <main class="pb-0">
+        <div class="main">
+          <nuxt />
         </div>
-
-        <div class="mb-0 footer-font">
-          Designed and built with all the love in the world by the
-          <a class="mt-3" href="https://github.com/neomorphism/neomo">AST </a>
-          with the help of
-          <a href="https://github.com/neomorphism/neomo">Our Contributors</a>.
-
-          <p class="mt-5">Currently v1.0.0 - beta.</p>
-          <p class="pb-10">Released under the <a>MIT License.</a></p>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer End -->
+      </main>
+      <div class="container content-nav"></div>
+      <!-- Contents End -->
+    </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Leftnav from '@/components/Leftnav.vue'
+
+export default {
+  data() {
+    return {
+      components: {
+        Leftnav,
+      },
+    }
+  },
+}
 </script>
 
 <style>
@@ -86,9 +79,18 @@ export default {}
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   margin: 0;
+  max-width: 100%;
 }
-
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
 /* Header CSS Start */
 .header {
   display: flex;
@@ -143,31 +145,14 @@ export default {}
 /* Content CSS Start */
 #main-layout {
   margin: 56px 0 0 0 !important;
+  height: 100%;
+  flex: 1 1 auto;
+  max-width: 100%;
 }
 .main {
   width: 950px;
   margin: auto;
   padding: 20px 50px 50px 50px;
-}
-/* Footer CSS Start */
-.footer {
-  background: #212121;
-  color: rgb(216, 216, 216);
-  text-align: center;
-}
-.footer a {
-  color: gray;
-}
-.footer p {
-  margin-bottom: 5px;
-}
-.footer-icon {
-  display: inline-block;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.footer-icon > a {
-  color: rgb(209, 209, 209);
 }
 
 a,
@@ -178,5 +163,32 @@ a:hover,
 hr {
   margin: auto;
   text-decoration: none;
+}
+
+.container {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+p {
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .content-nav {
+    display: none !important;
+  }
 }
 </style>
