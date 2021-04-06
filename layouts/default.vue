@@ -45,11 +45,11 @@
 
     <div id="main-layout" class="colunm neomo" style="display: flex">
       <!-- Left Navigation Start -->
-      <div class="container content-nav"><Leftnav /></div>
+      <div id="main-leftnav" class="container content-nav"><Leftnav /></div>
       <!-- Left Navigation End -->
 
       <!-- main Start -->
-      <main class="pb-0">
+      <main class="pb-0 main-border">
         <div class="main">
           <nuxt />
         </div>
@@ -150,9 +150,15 @@ body {
   max-width: 100%;
 }
 .main {
-  width: 950px;
+  width: 70vw;
   margin: auto;
   padding: 20px 50px 50px 50px;
+}
+.main-border {
+  border-left: thin solid rgba(0, 0, 0, 0.09);
+}
+#main-leftnav {
+  left: 0;
 }
 
 a,
