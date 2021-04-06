@@ -180,16 +180,22 @@ h1 {
   font-weight: 100;
   padding-top: 30px;
   padding-bottom: 20px;
+  color: #696969;
 }
 p {
   line-height: 1.4;
   margin-top: 10px;
   margin-bottom: 10px;
+  color: #696969;
 }
-
 h2 {
   margin-top: 50px;
   margin-bottom: 20px;
+  color: #696969;
+}
+.bottom-border {
+  padding-bottom: 50px;
+  border-bottom: thin solid rgba(0, 0, 0, 0.05);
 }
 
 @media screen and (max-width: 1400px) {
