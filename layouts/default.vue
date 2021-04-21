@@ -156,6 +156,7 @@ body {
 }
 .main-border {
   border-left: thin solid rgba(0, 0, 0, 0.09);
+  border-right: thin solid rgba(0, 0, 0, 0.09);
 }
 #main-leftnav {
   left: 0;

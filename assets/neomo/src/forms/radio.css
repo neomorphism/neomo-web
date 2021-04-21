@@ -6,7 +6,6 @@
 */
 
 .radio-input {
-  margin: 0 2px 0 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -16,11 +15,10 @@
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  left: 0;
-  top: 0;
   cursor: pointer;
+  margin: 0;
   border-radius: 100%;
-  box-shadow: inset 1px 2px 2px #b8b9be, inset -5px -2px 4px #fff;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
 
 .radio-label {
@@ -29,7 +27,7 @@
 }
 
 .radio-input:before {
-  content: " ";
+  content: "";
   text-align: center;
   width: 20px;
   height: 20px;
@@ -38,19 +36,34 @@
   display: inline-block;
   position: relative;
   border-radius: 100%;
-  box-shadow: inset 1px 2px 2px #b8b9be, inset -5px -2px 4px #fff;
+  box-shadow: inset -3px -3px 5px #b8b9be, inset 3px 3px 5px #fff;
 }
 
 .radio-input:checked:before {
-  width: 12px !important;
-  height: 12px !important;
+  width: 20px !important;
+  height: 20px !important;
   text-align: center;
-  border: 4px solid rgba(0,0,0,0.3);
+  background-color: #838383;
   position: relative;
+  box-shadow: none !important;
   vertical-align: middle;
   display: inline-block;
 }
 
+.dark .radio-input:before {
+  content: "";
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  position: relative;
+  border-radius: 100%;
+  box-shadow: inset -3px -3px 5px #b8b9be, inset 3px 3px 5px #fff;
+}
+
+/* 
 .radio-input:hover:before {
   content: " ";
   text-align: center;
@@ -61,8 +74,8 @@
   display: inline-block;
   position: relative;
   border-radius: 100%;
-  box-shadow: inset 1px 2px 2px #9c9da3, inset -5px -2px 4px rgb(236, 236, 236);
-}
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
+} */
 
 .radio-input:focus {
   outline: 0;
