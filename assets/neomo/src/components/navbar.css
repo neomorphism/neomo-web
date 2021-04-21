@@ -1,17 +1,53 @@
 /* Navbar Information */
 
 /*
-* Title : search-bar
-* Description : this is example
+* Title : Navbar
+* Description : this is Navbar example
 */
 
-.search-bar {
+.navbar {
+  width: 200px;
+  height: 100%;
+  overflow-x: hidden;
 }
-
-.search-bar--text {
+.navbar .toggle-button {
+  margin-top: 5px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
-
-.search-bar--button {
+.navbar .toggle-button:hover {
+  color: rgb(48, 84, 241);
 }
-
-/* search-bar FINISH */
+.active {
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+}
+.navbar .toggle-content {
+  display: none;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.navbar .toggle-content a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding-bottom: 5px;
+  color: #818181;
+}
+.navbar .toggle-content a:hover {
+  color: rgb(48, 84, 241);
+}
+/* Navbar FINISH */
