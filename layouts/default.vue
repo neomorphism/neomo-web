@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import Leftnav from '@/components/Leftnav.vue'
+import Leftnav from "@/components/Leftnav.vue";
 
 export default {
   data() {
@@ -69,9 +69,9 @@ export default {
       components: {
         Leftnav,
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style>

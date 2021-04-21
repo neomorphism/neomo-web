@@ -96,21 +96,21 @@
 export default {
   methods: {
     ToggleIcon() {
-      var toggle = document.getElementsByClassName('toggle-button')
-      var i
+      var toggle = document.getElementsByClassName("toggle-button");
+      var i;
 
       for (i = 0; i < toggle.length; i++) {
         if (toggle[i] === event.target) {
-          if (toggle[i].childNodes[1].classList[1] === 'fa-caret-down') {
-            toggle[i].childNodes[1].className = 'fa fa-caret-up'
-          } else if (toggle[i].childNodes[1].classList[1] === 'fa-caret-up') {
-            toggle[i].childNodes[1].className = 'fa fa-caret-down'
+          if (toggle[i].childNodes[1].classList[1] === "fa-caret-down") {
+            toggle[i].childNodes[1].className = "fa fa-caret-up";
+          } else if (toggle[i].childNodes[1].classList[1] === "fa-caret-up") {
+            toggle[i].childNodes[1].className = "fa fa-caret-down";
           }
         }
       }
     },
   },
-}
+};
 </script>
 
 <style>

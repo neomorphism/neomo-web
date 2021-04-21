@@ -6,49 +6,45 @@
 */
 
 .button {
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    justify-content: center;
+    align-items: center;
 
-  border: none;
-  border-radius: 10px;
-  background: white;
-  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .button:hover {
-  outline: 0;
-  cursor: pointer;
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+    outline: 0;
+    cursor: pointer;
 }
 
 .button:focus {
-  outline: 0;
+    outline: 0;
 }
 
 button.square {
-  border-radius: 0px !important;
+    border-radius: 0px !important;
 }
 
 button.normal {
-  width: 5rem;
-  height: 2.7rem;
+    min-width: 100px;
+    min-height: 50px;
 }
 
 button.small {
-  width: 4rem;
-  height: 2rem;
+    min-width: 50px;
+    min-height: 50px;
 }
 
 button.medium {
-  min-width: 7rem;
-  min-height: 3.5rem;
+    min-width: 110px;
+    min-height: 60px;
 }
 
 button.large {
-  min-width: 9rem;
-  min-height: 4rem;
+    min-width: 130px;
+    min-height: 70px;
 }
+
+/* Button component FINISH */

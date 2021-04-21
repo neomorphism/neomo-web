@@ -63,7 +63,7 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style>
@@ -153,7 +153,7 @@ export default {}
 }
 
 /* Left Navigation Start */
-.left-nav {
+.navbar {
   display: none;
 }
 </style>
