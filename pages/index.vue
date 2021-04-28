@@ -156,4 +156,9 @@ export default {};
 .navbar {
   display: none;
 }
+
+/* Lightbar Start */
+.right-bar {
+  display: none;
+}
 </style>
