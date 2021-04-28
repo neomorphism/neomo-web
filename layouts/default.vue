@@ -6,10 +6,10 @@
       <div class="ml-1">
         <div class="header-logo">
           <div class="header-logo--icon">
-            <img src="blacklogo2.png" />
+            <img src="~/static/blacklogo2.png" />
           </div>
           <div class="header-logo--name">
-            <img src="logoname1.png" />
+            <img src="~/static/logoname1.png" />
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
           <nuxt />
         </div>
       </main>
-      <div class="container content-nav"></div>
+      <div class="container content-nav"><Lightbar /></div>
       <!-- Contents End -->
     </div>
   </div>
@@ -62,12 +62,14 @@
 
 <script>
 import Leftnav from "@/components/Leftnav.vue";
+import Lightbar from "@/components/Lightbar.vue";
 
 export default {
   data() {
     return {
       components: {
         Leftnav,
+        Lightbar,
       },
     };
   },
@@ -86,6 +88,7 @@ export default {
 }
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -100,6 +103,9 @@ body {
   position: fixed;
   top: 0;
   background-color: white;
+  z-index: 2;
+  padding-left: 7vw;
+  padding-right: 7vw;
 }
 .header-logo {
   min-width: 200px;
@@ -150,14 +156,11 @@ body {
   max-width: 100%;
 }
 .main {
-  width: 70vw;
+  width: 55vw;
   margin: auto;
   padding: 20px 50px 50px 50px;
 }
-.main-border {
-  border-left: thin solid rgba(0, 0, 0, 0.09);
-  border-right: thin solid rgba(0, 0, 0, 0.09);
-}
+
 #main-leftnav {
   left: 0;
 }
@@ -181,7 +184,7 @@ h1 {
   font-weight: 100;
   padding-top: 30px;
   padding-bottom: 20px;
-  color: #696969;
+  color: #414141;
 }
 p {
   line-height: 1.4;
@@ -190,18 +193,38 @@ p {
   color: #696969;
 }
 h2 {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 20px;
-  color: #696969;
+  color: #414141;
+}
+li {
+  line-height: 25px;
 }
 .bottom-border {
   padding-bottom: 50px;
-  border-bottom: thin solid rgba(0, 0, 0, 0.05);
+  border-bottom: thin solid rgba(0, 0, 0, 0.07);
+}
+.text-strong {
+  background: none;
+  padding: 0;
+  color: rgb(95, 95, 95);
+  font-weight: bold;
+}
+.nuxt-content pre {
+  margin: 0;
+  border: none;
+  border-radius: 10px;
+  background: var(--neomo);
+  box-shadow: inset -3px -3px 7px #ffffffe5,
+    inset 3px 3px 5px rgba(88, 100, 121, 0.288);
 }
 
 @media screen and (max-width: 1400px) {
   .content-nav {
     display: none !important;
+  }
+  .main {
+    width: 100%;
   }
 }
 </style>
