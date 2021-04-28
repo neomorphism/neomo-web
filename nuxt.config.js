@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "webwebweb",
+    title: "NEOMO",
     htmlAttrs: {
       lang: "en",
     },
@@ -44,7 +44,12 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
+    "@nuxt/content",
   ],
+
+  content: {
+    liveEdit: false,
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
