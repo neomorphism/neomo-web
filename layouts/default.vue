@@ -29,16 +29,6 @@
           placeholder="Search Neomo"
         />
         <!-- Header-searchbar End -->
-        <hr class="header-hr" />
-        <!-- Header-menu Start -->
-        <a href="/table" class="header-btn"
-          ><span class="font-color btn__content"> STORE </span></a
-        ><a href="/" class="header-btn"
-          ><span class="font-color btn__content"> TEAM </span></a
-        ><a href="/" class="header-btn"
-          ><span class="font-color btn__content"> OPTION </span></a
-        >
-        <!-- Header-menu End -->
       </div>
     </header>
     <!-- Header End -->
@@ -54,7 +44,6 @@
           <nuxt />
         </div>
       </main>
-      <div class="container content-nav"><Rightbar /></div>
       <!-- Contents End -->
     </div>
   </div>
@@ -62,14 +51,12 @@
 
 <script>
 import Leftnav from "@/components/Leftnav.vue";
-import Rightbar from "@/components/Rightbar.vue";
 
 export default {
   data() {
     return {
       components: {
         Leftnav,
-        Rightbar,
       },
     };
   },
@@ -140,18 +127,6 @@ body {
   margin: 11px;
   width: 300px;
 }
-.header-hr {
-  border: thin solid rgb(200, 200, 200);
-  height: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.header-btn {
-  color: rgb(179, 179, 179);
-  padding: 5px;
-  margin-left: 12px !important;
-  margin-right: 12px !important;
-}
 
 /* Content CSS Start */
 #main-layout {
@@ -190,7 +165,13 @@ h1 {
   font-weight: 100;
   padding-top: 30px;
   padding-bottom: 20px;
-  color: #414141;
+  background: linear-gradient(
+    90deg,
+    rgba(113, 132, 255, 1) 15%,
+    rgba(47, 25, 255, 0.9192051820728291) 45%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 p {
   line-height: 1.4;
@@ -201,7 +182,7 @@ p {
 h2 {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #414141;
+  color: #575757;
 }
 li {
   line-height: 25px;
@@ -220,27 +201,23 @@ li {
 .nuxt-content pre {
   margin: 0;
   border: none;
-  border-radius: 10px;
   background: var(--neomo);
-  box-shadow: inset -3px -3px 7px #ffffffe5,
-    inset 3px 3px 5px rgba(88, 100, 121, 0.288);
 }
-.tab-list {
+
+.code-exam {
+  padding: 10px 80px 40px 80px !important;
+  margin-bottom: 40px;
+}
+.expanded {
+  display: none;
+}
+.button i {
+  padding: 10px;
+}
+.button-exam {
   float: right;
-}
-.tab ul {
-  margin: 0;
-}
-.tab ul.tab-list li {
-  margin: 1rem 0 2rem 2rem;
-}
-.tab-content--text {
-  margin-bottom: 20px;
-}
-.tab-content--text li {
-  display: block !important;
-  min-height: 0 !important;
-  padding: 0 !important;
+  padding: 0;
+  border-radius: 100%;
 }
 
 @media screen and (max-width: 1400px) {

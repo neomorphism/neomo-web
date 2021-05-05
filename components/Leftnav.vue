@@ -172,7 +172,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 /* Left Navigation Start */
 .navbar {
   width: 22vw;
@@ -195,5 +195,8 @@ export default {
 .navbar .fa-caret-up {
   float: right;
   padding-right: 8px;
+}
+.card {
+  padding: 10px;
 }
 </style>
