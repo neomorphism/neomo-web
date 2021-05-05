@@ -49,7 +49,7 @@
               </div>
             </li>
           </ul>
-          <ul class="tab-list">
+          <ul class="tab-list tab-right">
             <li><a id="tab-1" href="#" class="current">Download</a></li>
             <li><a id="tab-2" href="#">CDN</a></li>
             <li><a id="tab-3" href="#">Package</a></li>

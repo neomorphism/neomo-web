@@ -98,7 +98,7 @@
               </div>
             </li>
           </ul>
-          <ul class="tab-list">
+          <ul class="tab-list tab-right">
             <li><a id="tab-1" href="#" class="current">NEOMO?</a></li>
             <li><a id="tab-2" href="#">License</a></li>
             <li><a id="tab-3" href="#">Contribute</a></li>
