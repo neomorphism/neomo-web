@@ -15,7 +15,7 @@
       <div class="columns">
         <div class="column size-12">
           <ul class="tab-content outset-neomo">
-            <li id="content-1">
+            <li id="content-1" class="tab-content--list">
               <div class="tab-content--title"><h2>Default</h2></div>
               <div class="tab-content--text">
                 <!-- default button -->
@@ -33,7 +33,7 @@
                 </div>
               </div>
             </li>
-            <li id="content-2">
+            <li id="content-2" class="tab-content--list">
               <div class="tab-content--title"><h2>Outset</h2></div>
               <div class="tab-content--text">
                 <!-- outset button -->
@@ -51,7 +51,7 @@
                 </div>
               </div>
             </li>
-            <li id="content-3">
+            <li id="content-3" class="tab-content--list">
               <div class="tab-content--title"><h2>Inset</h2></div>
               <div class="tab-content--text">
                 <!-- inset button -->
@@ -69,7 +69,7 @@
                 </div>
               </div>
             </li>
-            <li id="content-4">
+            <li id="content-4" class="tab-content--list">
               <div class="tab-content--title"><h2>Inset</h2></div>
               <div class="tab-content--text">
                 <!-- color button -->
@@ -115,7 +115,7 @@
                 </div>
               </div>
             </li>
-            <li id="content-5">
+            <li id="content-5" class="tab-content--list">
               <div class="tab-content--title"><h2>Color</h2></div>
               <div class="tab-content--text">
                 <div class="columns">

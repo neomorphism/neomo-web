@@ -6,24 +6,26 @@
 
 ```html
 <!DOCTYPE html>
-<html>
+<html charset="utf-8">
   <head>
-    <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div>
-      <input class="checkbox-input" type="checkbox" value="" id="check1" />
-      <label class="checkbox-label" for="check1">This is checkbox.</label>
-    </div>
+  <body class="neomo">
+    <input
+      class="checkbox-input outset-neomo"
+      type="checkbox"
+      value=""
+      id="check1"
+    />
+    <label class="checkbox-label" for="check1">This is checkbox.</label>
   </body>
 </html>
 ```
 
 ## File Information
 
-> Simple File usage
+> File usage
 
 ```html
 <!DOCTYPE html>
@@ -32,37 +34,13 @@
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body class="p-2">
-    <div class="file">
-      <label for="ex-file" class="outset-gray">Choose a file...</label>
-      <input type="file" id="ex-file" />
-    </div>
-  </body>
-</html>
-```
-
-> Simple Filename usage
-
-```html
-<!DOCTYPE html>
-<html charset="utf-8">
-  <head>
-    <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-  </head>
-  <body class="p-2">
+  <body class="container neomo">
     <div class="file">
       <input class="file-name" value="Choose a file..." disabled="disabled" />
-      <label for="ex-filename" class="outset-gray">Choose a file...</label>
-      <input
-        type="file"
-        id="ex-filename"
-        class="file-hidden"
-        onclick="FileUpload()"
-      />
+      <label for="file-label">Upload</label>
+      <input type="file" id="file-label" class="file-hidden" />
     </div>
 
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../src/neomo.js"></script>
   </body>
 </html>
@@ -85,64 +63,121 @@
   </head>
 
   <body>
-    <div class="container bg-gray">
+    <div class="container">
+      <br />
+      <input class="input" type="text" disabled placeholder="Disabled" />
+      <input class="input square" type="text" placeholder="Square Input" />
+      <input class="input rounded" type="text" placeholder="Rounded Input" />
+      <br />
+    </div>
+    <div class="container neomo">
       <br />
       <input
-        class="input outset-gray"
+        class="input outset-neomo"
         type="text"
         disabled
         placeholder="Disabled"
       />
       <input
-        class="input square outset-gray"
+        class="input square outset-neomo"
         type="text"
         placeholder="Square Input"
       />
       <input
-        class="input rounded outset-gray"
+        class="input rounded outset-neomo"
         type="text"
         placeholder="Rounded Input"
       />
       <br />
     </div>
-    <div class="container bg-dark">
+    <div class="container neomo">
       <br />
       <input
-        class="input outset-dark small"
+        class="input outset-neomo small"
         type="text"
         placeholder="Small Input"
       />
       <br />
-      <input class="input outset-dark" type="text" placeholder="Normal Input" />
+      <input
+        class="input outset-neomo"
+        type="text"
+        placeholder="Normal Input"
+      />
       <br />
       <input
-        class="input outset-dark medium"
+        class="input outset-neomo medium"
         type="text"
         placeholder="Medium Input"
       />
       <br />
       <input
-        class="input outset-dark large"
+        class="input outset-neomo large"
         type="text"
         placeholder="Large Input"
       />
       <br />
     </div>
-    <div class="container bg-blue">
+  </body>
+</html>
+```
+
+> Input Group usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+
+  <body>
+    <div class="container p-5">
       <br />
-      <span class="left-icon">
-        <i class="far fa-envelope fa-lg icon"></i>
-        <input class="input outset-blue" type="email" placeholder="email" />
-      </span>
+      <div class="input-group">
+        <span class="input-group-left text-center">@</span>
+        <input type="text" class="input-group-right" placeholder="Username" />
+      </div>
       <br />
-      <span class="right-icon">
-        <i class="fas fa-lock fa-lg icon"></i>
+    </div>
+    <br />
+    <div class="container neomo p-5">
+      <br />
+      <div class="input-group neomo">
+        <span class="input-group-left text-center">@</span>
         <input
-          class="input outset-blue"
-          type="password"
-          placeholder="password"
+          type="text"
+          class="input-group-right outset-neomo"
+          placeholder="Username"
         />
-      </span>
+      </div>
+      <br />
+    </div>
+    <br />
+    <div class="container gray p-5">
+      <br />
+      <div class="input-group outset-gray">
+        <input
+          type="text"
+          class="input-group-left outset-gray"
+          placeholder="Username"
+        />
+        <span class="input-group-right text-center">@</span>
+      </div>
+      <br />
+    </div>
+    <br />
+    <div class="container dark p-5">
+      <br />
+      <div class="input-group outset-dark">
+        <input
+          type="text"
+          class="input-group-left outset-dark"
+          placeholder="Username"
+        />
+        <span class="input-group-right text-center">@</span>
+      </div>
+      <br />
     </div>
   </body>
 </html>
@@ -153,33 +188,34 @@
 > Radio usage
 
 ```html
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
+  <body class="neomo">
     <div>
-      <input
-        class="radio-input"
-        type="radio"
-        name="exam-radio"
-        value=""
-        id="radio1"
-      />
-      <label class="radio-label" for="radio1">this is radio. 'option1'</label>
-    </div>
-    <div>
-      <input
-        class="radio-input"
-        type="radio"
-        name="exam-radio"
-        value=""
-        id="radio2"
-      />
-      <label class="radio-label" for="radio2">this is radio. 'option2'</label>
+      <div>
+        <input
+          class="radio-input outset-neomo"
+          type="radio"
+          name="exam-radio2"
+          value=""
+          id="radio3"
+        />
+        <label class="radio-label" for="radio3">this is radio. 'option1'</label>
+      </div>
+      <div>
+        <input
+          class="radio-input outset-neomo"
+          type="radio"
+          name="exam-radio2"
+          value=""
+          id="radio4"
+        />
+        <label class="radio-label" for="radio4">this is radio. 'option2'</label>
+      </div>
     </div>
   </body>
 </html>
@@ -200,8 +236,6 @@
     <input type="range" min="1" max="100" class="range-round" id="myRange" />
     <p>Value: <span id="demo"></span></p>
   </body>
-
-  <script src="../src/forms/range.js"></script>
 </html>
 ```
 
@@ -228,6 +262,54 @@
         <label for="fullname" class="floatinglabel-label">Name</label>
       </div>
     </form>
+  </body>
+</html>
+```
+
+## Switches Information
+
+> Switches usage
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="container column size-2 p-2">
+      <h1>Default Switch</h1>
+      <label class="switch-label">
+        <input type="checkbox" />
+        <span class="switch"></span>
+      </label>
+    </div>
+    <br />
+    <div class="container neomo column size-2 p-2">
+      <h1>Neomo Switch</h1>
+      <label class="switch-label">
+        <input type="checkbox" />
+        <span class="switch outset-neomo"></span>
+      </label>
+    </div>
+    <br />
+    <div class="container gray column size-2 p-2">
+      <h1>Gray Switch</h1>
+      <label class="switch-label">
+        <input type="checkbox" />
+        <span class="switch outset-gray"></span>
+      </label>
+    </div>
+    <br />
+    <div class="container dark column size-2 p-2">
+      <h1>Dark Switch</h1>
+      <label class="switch-label">
+        <input type="checkbox" />
+        <span class="switch outset-dark"></span>
+      </label>
+    </div>
   </body>
 </html>
 ```

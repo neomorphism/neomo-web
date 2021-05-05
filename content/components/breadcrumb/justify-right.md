@@ -1,5 +1,5 @@
 ```html
-<nav class="breadcrumb centered inset-neomo p-1" aria-label="breadcrumbs">
+<nav class="breadcrumb right inset-neomo p-1" aria-label="breadcrumbs">
   <ul>
     <li>
       <a href="#">

@@ -6,7 +6,7 @@
 */
 
 .navbar {
-  /* width: 100vw; */
+  width: 200px;
   height: 100%;
   overflow-x: hidden;
 }
@@ -26,7 +26,6 @@
 }
 .navbar .toggle-button:hover {
   color: rgb(48, 84, 241);
-  transition: all 0.3s;
 }
 .active {
   border: none;
@@ -37,6 +36,7 @@
   display: none;
   padding-left: 30px;
   padding-top: 10px;
+  transition: all 1s;
 }
 .navbar .toggle-content a {
   text-decoration: none;
@@ -47,10 +47,8 @@
   cursor: pointer;
   padding-bottom: 5px;
   color: #818181;
-  transition: all 0.3s;
 }
 .navbar .toggle-content a:hover {
   color: rgb(48, 84, 241);
-  transition: all 0.3s;
 }
 /* Navbar FINISH */

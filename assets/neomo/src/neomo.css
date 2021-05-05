@@ -1,33 +1,35 @@
 /* Import Section */
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-@import './color.css';
-@import './components/alert.css';
-@import './components/breadcrumb.css';
-@import './content/table.css';
-@import './components/badge.css';
-@import './components/button.css';
-@import './components/card.css';
-@import './components/dropdown.css';
-@import './components/icon.css';
-@import './components/modal.css';
-@import './components/navbar.css';
-@import './components/navigation.css';
-@import './components/pagination.css';
-@import './components/progressbar.css';
-@import './components/select.css';
-@import './components/spinners.css';
-@import './components/tab.css';
-@import './components/toast.css';
-@import './components/tooltips.css';
-@import './forms/checkbox.css';
-@import './forms/file.css';
-@import './forms/input.css';
-@import './forms/labels.css';
-@import './forms/radio.css';
-@import './forms/range.css';
-@import './helpers/typography.css';
-@import './layout/layout.css';
-@import './layout/columns.css';
+@import "./color.css";
+@import "./components/alert.css";
+@import "./components/breadcrumb.css";
+@import "./content/table.css";
+@import "./components/badge.css";
+@import "./components/button.css";
+@import "./components/card.css";
+@import "./components/dropdown.css";
+@import "./components/icon.css";
+@import "./components/modal.css";
+@import "./components/navigation.css";
+@import "./components/navbar.css";
+@import "./components/pagination.css";
+@import "./components/progressbar.css";
+@import "./components/select.css";
+@import "./components/spinners.css";
+@import "./components/tab.css";
+@import "./components/toast.css";
+@import "./components/tooltips.css";
+@import "./forms/checkbox.css";
+@import "./forms/file.css";
+@import "./forms/input.css";
+@import "./forms/labels.css";
+@import "./forms/radio.css";
+@import "./forms/range.css";
+@import "./forms/switches.css";
+@import "./helpers/coloredLinks.css";
+@import "./helpers/typography.css";
+@import "./layout/layout.css";
+@import "./layout/columns.css";
 
 /* Common Section */
 
@@ -41,7 +43,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Jeju Gothic', sans-serif;
+  font-family: "Jeju Gothic", sans-serif;
 }
 /* CSS Normalize FINISH */
 
@@ -458,12 +460,9 @@ body {
   --light: #d1d9e6;
   --dark: #31344b;
   --default: #262833;
-  --white: #ecf0f3;
-  --gray: #44476a;
   --neutral: #ecf0f3;
   --soft: #e6e7ee;
   --black: #262833;
-  --purple: #6f42c1;
   --gray-100: #f3f7fa;
   --gray-200: #fafbfe;
   --gray-300: #e6e7ee;

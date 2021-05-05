@@ -17,7 +17,7 @@
       <div class="columns">
         <div class="column size-12">
           <ul class="tab-content outset-neomo">
-            <li id="content-1">
+            <li id="content-1" class="tab-content--list">
               <div class="tab-content--title"><h2>What is NEOMO?</h2></div>
               <div class="tab-content--text">
                 <client-only>
@@ -42,7 +42,7 @@
                 </client-only>
               </div>
             </li>
-            <li id="content-2">
+            <li id="content-2" class="tab-content--list">
               <div class="tab-content--title"><h2>License</h2></div>
               <div class="tab-content--text">
                 <client-only>
@@ -59,7 +59,7 @@
                 </client-only>
               </div>
             </li>
-            <li id="content-3">
+            <li id="content-3" class="tab-content--list">
               <div class="tab-content--title"><h2>Contribute</h2></div>
               <div class="tab-content--text">
                 <client-only>

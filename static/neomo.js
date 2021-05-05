@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var alt = document.getElementsByClassName("alt-close");
   var alt_close = document.getElementsByClassName("alt-close");
-  var funcs1 = [];
+  var funcs = [];
 
   function Alt(num) {
     return function () {
@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }
   for (var i = 0; i < alt_close.length; i++) {
-    funcs1[i] = Alt(i);
+    funcs[i] = Alt(i);
   }
   for (var j = 0; j < alt_close.length; j++) {
-    funcs1[j]();
+    funcs[j]();
   }
 
   /* Alert function end */
@@ -50,41 +50,56 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     };
   }
-  for (var i = 0; i < modal_btns.length; i++) {
-    funcs[i] = Modal(i);
-  }
-  for (var j = 0; j < modal_btns.length; j++) {
-    funcs[j]();
+
+  if (modals) {
+    for (var i = 0; i < modal_btns.length; i++) {
+      funcs[i] = Modal(i);
+    }
+    for (var j = 0; j < modal_btns.length; j++) {
+      funcs[j]();
+    }
   }
   /* Modal function end */
 
   /* Tab function start */
-  $(".tab").each(function (i) {
-    var oTab = $(this);
-    var tabIndex = $(this).find(".current").attr("id").match(/\d+$/);
+  var tab = document.getElementsByClassName("tab");
+  var tab_list = [];
 
-    $(this)
-      .find(".tab-content")
-      .find("#content-" + tabIndex[0])
-      .show();
+  for (var i = 0; i < tab.length; i++) {
+    tab_list[i] = tab[i]
+      .getElementsByClassName("tab-list")[0]
+      .getElementsByTagName("a");
+    var tab_index = tab[i]
+      .getElementsByClassName("current")[0]
+      .id.split("-")[1];
+    var tab_content = tab[i].querySelector("#content-" + tab_index);
+    tab_content.style.display = "block";
+  }
 
-    $(this)
-      .find(".tab-list li a")
-      .click(function () {
-        var tabIndex = $(this).attr("id").match(/\d+$/);
+  for (var i = 0; i < tab_list.length; i++) {
+    for (var j = 0; j < tab_list[i].length; j++) {
+      tab_list[i][j].onclick = function () {
+        var tab = this.closest(".tab");
+        var tab_list = this.closest(".tab-list").getElementsByTagName("a");
+        var tab_index;
+        var tab_content;
 
-        oTab.find(".tab-list li a").removeClass("current");
-        $(this).addClass("current");
+        for (var k = 0; k < tab_list.length; k++) {
+          tab_index = tab_list[k].id.split("-")[1];
+          tab_content = tab_content = tab.querySelector(
+            "#content-" + tab_index
+          );
+          tab_content.style.display = "none";
+          tab_list[k].classList.remove("current");
+        }
 
-        oTab.find(".tab-content li").hide();
-        oTab
-          .find(".tab-content")
-          .find("#content-" + tabIndex[0])
-          .show();
-
-        return false;
-      });
-  });
+        this.classList.add("current");
+        tab_index = this.id.split("-")[1];
+        tab_content = tab.querySelector("#content-" + tab_index);
+        tab_content.style.display = "block";
+      };
+    }
+  }
   /* Tab function end */
 
   /* Toast function start */
@@ -99,10 +114,13 @@ document.addEventListener("DOMContentLoaded", function () {
       var dropdowns = document.getElementsByClassName(
         "dropdown-toggle--content"
       );
+      var button = document.getElementsByClassName("dropdown-toggle--button");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        openDropdown.style.display = "none";
+        if (!(event.target === button[i].childNodes[1])) {
+          openDropdown.style.display = "none";
+        }
       }
     }
 
@@ -122,7 +140,11 @@ function DropdownToggle() {
       event.target === dropdown[i] ||
       event.target === dropdown[i].childNodes[1]
     ) {
-      dropdown[i].nextElementSibling.style.display = "block";
+      if (dropdown[i].nextElementSibling.style.display === "block") {
+        dropdown[i].nextElementSibling.style.display = "none";
+      } else {
+        dropdown[i].nextElementSibling.style.display = "block";
+      }
     }
   }
 }
@@ -146,3 +168,54 @@ function NavbarToggle() {
   }
 }
 /* Navbar function end */
+
+/* Range start */
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+if (slider) {
+  output.innerHTML = slider.value;
+
+  slider.oninput = function () {
+    output.innerHTML = this.value;
+  };
+}
+/* Range end */
+
+/* Navigation function start */
+function sideNav() {
+  var menu = document.getElementsByClassName("side-menu");
+  var content = document.getElementsByClassName("nav-content");
+
+  for (var i = 0; i < menu.length; i++) {
+    if (menu[i] === event.target) {
+      if (content[i].style.display == "block") {
+        content[i].style.display = "none";
+      } else {
+        content[i].style.display = "block";
+      }
+    }
+  }
+}
+/* Navigation function end */
+
+/* Collapsible function start */
+function Collap() {
+  var collapsed = document.getElementById("collapsed");
+  var expanded = document.getElementById("expanded");
+
+  if (expanded.style.display == "block") {
+    expanded.style.display = "none";
+    document
+      .getElementById("collap-icon")
+      .setAttribute("class", "fas fa-caret-down fa-2x");
+    collapsed.style.borderBottom = "none";
+  } else {
+    expanded.style.display = "block";
+    document
+      .getElementById("collap-icon")
+      .setAttribute("class", "fas fa-caret-up fa-2x");
+    collapsed.style.borderBottom = "1px solid var(--gray-400)";
+  }
+}
+/* Navigation function end */
