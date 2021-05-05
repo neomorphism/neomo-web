@@ -12,62 +12,94 @@
       </p>
     </client-only>
 
-    <div class="card outset-neomo">
-      <!-- Header start -->
-      <div class="card-header--title">Basic</div>
-      <div class="card-header--text">
-        <client-only>
-          <p style="margin-bottom: 80px">
-            [The delete function works as follows through the javascript
-            function]<br />
-            By default, toast is used in conjunction with the show class, and if
-            the accompanying show class disappears, it will be used in the case
-            of disappearing.<br />
-            The opacity:0 property makes it invisible
-          </p>
-        </client-only>
-      </div>
-      <!-- Header end -->
+    <div class="tab">
+      <ul class="tab-content outset-neomo">
+        <!-- Content-1 start -->
+        <li id="content-1" class="tab-content--list">
+          <div class="tab-content--title"><h2>Basic</h2></div>
+          <div class="tab-content--text">
+            <client-only>
+              <p style="margin-bottom: 80px">
+                [The delete function works as follows through the javascript
+                function]<br />
+                By default, toast is used in conjunction with the show class,
+                and if the accompanying show class disappears, it will be used
+                in the case of disappearing.<br />
+                The opacity:0 property makes it invisible
+              </p>
+            </client-only>
 
-      <!-- Content Start -->
-      <div class="card-content">
-        <!-- Outset start -->
-        <h4 class="mt-5 mb-5">Outset</h4>
-        <div class="toast show outset-neomo">
-          <div class="toast-header">
-            <span class=""></span>
-            <strong class="mr-auto ml-2">Neumorphism</strong>
-            <small class="mr-2 ml-auto">11 mins ago</small>
-            <button type="button" onclick="toast_button(this);">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="toast-body">Hello, world! This is a toast message.</div>
-        </div>
-        <div class="mt-2">
-          <nuxt-content :document="basicOutset" />
-        </div>
-        <!-- Outset end -->
+            <!-- Content-1 Outset start -->
+            <div class="tab-content--text"><h3>Outset</h3></div>
+            <div class="card inset-neomo code-exam">
+              <div class="mt-2 mb-3" style="display: flow-root">
+                <button
+                  class="button outset-neomo button-exam"
+                  onclick="ContentToggle()"
+                >
+                  <i class="fas fa-code collapse"></i>
+                </button>
+              </div>
 
-        <!-- Inset start -->
-        <h4 class="mt-5 mb-5">Inset</h4>
-        <div class="toast show inset-neomo">
-          <div class="toast-header">
-            <span class=""></span>
-            <strong class="mr-auto ml-2">Neumorphism</strong>
-            <small class="mr-2 ml-auto">11 mins ago</small>
-            <button type="button" onclick="toast_button(this);">
-              <span aria-hidden="true">×</span>
-            </button>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicOutset" />
+              </div>
+              <div class="toast show outset-neomo" style="margin: 0 auto">
+                <div class="toast-header">
+                  <span class=""></span>
+                  <strong class="mr-auto ml-2">Neumorphism</strong>
+                  <small class="mr-2 ml-auto">11 mins ago</small>
+                  <button type="button" onclick="toast_button(this);">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+            <!-- Content-1 Outset end -->
+
+            <!-- Content-1 Inset start -->
+            <div class="tab-content--text"><h3>Inset</h3></div>
+            <div class="card inset-neomo code-exam">
+              <div class="mt-2 mb-3" style="display: flow-root">
+                <button
+                  class="button outset-neomo button-exam"
+                  onclick="ContentToggle()"
+                >
+                  <i class="fas fa-code collapse"></i>
+                </button>
+              </div>
+
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicInset" />
+              </div>
+              <div class="toast show inset-neomo" style="margin: 0 auto">
+                <div class="toast-header">
+                  <span class=""></span>
+                  <strong class="mr-auto ml-2">Neumorphism</strong>
+                  <small class="mr-2 ml-auto">11 mins ago</small>
+                  <button type="button" onclick="toast_button(this);">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+            <!-- Content-1 Inset end -->
           </div>
-          <div class="toast-body">Hello, world! This is a toast message.</div>
-        </div>
-        <div class="mt-2">
-          <nuxt-content :document="basicInset" />
-        </div>
-        <!-- Inset end -->
-      </div>
-      <!-- Content end -->
+        </li>
+        <!-- Content-1 end -->
+      </ul>
+
+      <!-- Tab List start -->
+      <ul class="tab-list tab-right">
+        <li><a class="current" id="tab-1">Basic</a></li>
+      </ul>
+      <!-- Tab List end -->
     </div>
   </div>
 </template>
@@ -76,10 +108,10 @@
 export default {
   async asyncData({ $content, params }) {
     const basicOutset = await $content(
-      params.slug || "components/toast/basic-Outset"
+      params.slug || "components/toast/basic-outset"
     ).fetch();
     const basicInset = await $content(
-      params.slug || "components/toast/basic-Inset"
+      params.slug || "components/toast/basic-inset"
     ).fetch();
 
     return {
@@ -89,22 +121,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.card {
-  padding: 24px 24px 24px 64px;
-}
-.card-header--text {
-  height: 10vw;
-}
-.card-header--title {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-}
-.card-header--text {
-  font-size: 15px;
-  padding: 15px;
-}
-</style>
