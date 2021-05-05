@@ -1,93 +1,136 @@
 <template>
   <!-- Left Navigation Start -->
   <div class="navbar">
-    <!-- Overview list start -->
-    <button class="toggle-button" onclick="NavbarToggle()" @click="ToggleIcon">
-      Overview
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="toggle-content">
-      <a href="/overview/start">Start</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-    <!-- Overview list end -->
+    <!-- Getting Started list start -->
+    <div class="card outset-neomo">
+      <div>
+        <button
+          class="toggle-button"
+          onclick="NavbarToggle()"
+          @click="ToggleIcon"
+        >
+          Getting Started
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="toggle-content">
+          <a id="introduction" href="/getting_started/introduction"
+            >Introduction</a
+          >
+          <a id="download" href="/getting_started/download">Download</a>
+          <a id="modifiers" href="/getting_started/modifiers"
+            >Modifiers syntax</a
+          >
+        </div>
+      </div>
+      <!-- Getting Started list end -->
 
-    <!-- Components list start -->
-    <button class="toggle-button" onclick="NavbarToggle()" @click="ToggleIcon">
-      Components
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="toggle-content">
-      <a href="#">Alert</a>
-      <a href="#">Badge</a>
-      <a href="#">Breadcrumb</a>
-      <a href="#">Button</a>
-      <a href="#">Card</a>
-      <a href="#">Columns</a>
-      <a href="#">Component</a>
-      <a href="#">Dropdown</a>
-      <a href="#">Icon</a>
-      <a href="#">Modal</a>
-      <a href="#">Navbar</a>
-      <a href="#">Navigation</a>
-      <a href="#">Pagination</a>
-      <a href="#">Progressbar</a>
-      <a href="#">Select</a>
-      <a href="#">Spinner</a>
-      <a href="#">Tab</a>
-      <a href="#">Toast</a>
-      <a href="#">Tooltip</a>
-    </div>
-    <!-- Components list start -->
+      <!-- Layout list start -->
+      <div>
+        <button
+          class="toggle-button"
+          onclick="NavbarToggle()"
+          @click="ToggleIcon"
+        >
+          Layout
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="toggle-content">
+          <a id="layout" href="/layout/layout">Layout</a>
+          <a id="columns" href="/layout/columns">Columns</a>
+        </div>
+      </div>
+      <!-- Layout list end -->
 
-    <!-- Content list start -->
-    <button class="toggle-button" onclick="NavbarToggle()" @click="ToggleIcon">
-      Content
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="toggle-content">
-      <a href="#">Content</a>
-      <a href="#">Table</a>
-    </div>
-    <!-- Content list end -->
+      <!-- Components list start -->
+      <div>
+        <button
+          class="toggle-button"
+          onclick="NavbarToggle()"
+          @click="ToggleIcon"
+        >
+          Components
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="toggle-content">
+          <a id="alert" href="/components/alert">Alert</a>
+          <a id="badge" href="/components/badge">Badge</a>
+          <a id="breadcrumb" href="/components/breadcrumb">Breadcrumb</a>
+          <a id="button" href="/components/button">Button</a>
+          <a id="card" href="/components/card">Card</a>
+          <a id="dropdown" href="/components/dropdown">Dropdown</a>
+          <a id="icon" href="/components/icon">Icon</a>
+          <a id="modal" href="/components/modal">Modal</a>
+          <a id="navbar" href="/components/navbar">Navbar</a>
+          <a id="navigation" href="/components/navigation">Navigation</a>
+          <a id="pagination" href="/components/pagination">Pagination</a>
+          <a id="progressbar" href="/components/progressbar">Progressbar</a>
+          <a id="select" href="/components/select">Select</a>
+          <a id="spinner" href="/components/spinner">Spinner</a>
+          <a id="tab" href="/components/tab">Tab</a>
+          <a id="toast" href="/components/toast">Toast</a>
+          <a id="tooltip" href="/components/tooltip">Tooltip</a>
+        </div>
+      </div>
+      <!-- Components list end -->
 
-    <!-- Form list start -->
-    <button class="toggle-button" onclick="NavbarToggle()" @click="ToggleIcon">
-      Form
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="toggle-content">
-      <a href="#">Checkbox</a>
-      <a href="#">File</a>
-      <a href="#">Input</a>
-      <a href="#">Label</a>
-      <a href="#">Radio</a>
-      <a href="#">Range</a>
-    </div>
-    <!-- Form list start -->
+      <!-- Content list start -->
+      <div>
+        <button
+          class="toggle-button"
+          onclick="NavbarToggle()"
+          @click="ToggleIcon"
+        >
+          Content
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="toggle-content">
+          <a id="table" href="/content/table">Table</a>
+        </div>
+      </div>
+      <!-- Content list end -->
 
-    <!-- Helpers list start -->
-    <button class="toggle-button" onclick="NavbarToggle()" @click="ToggleIcon">
-      Helpers
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="toggle-content">
-      <a href="#">Helper</a>
-      <a href="#">Typography</a>
-    </div>
-    <!-- Helpers list start -->
+      <!-- Form list start -->
+      <div>
+        <button
+          class="toggle-button"
+          onclick="NavbarToggle()"
+          @click="ToggleIcon"
+        >
+          Form
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="toggle-content">
+          <a id="checkbox" href="/form/checkbox">Checkbox</a>
+          <a id="file" href="/form/file">File</a>
+          <a id="input" href="/form/input">Input</a>
+          <a id="inputGroup" href="/form/inputGroup">Input Group</a>
+          <a id="labels" href="/form/labels">Labels</a>
+          <a id="radio" href="/form/radio">Radio</a>
+          <a id="range" href="/form/range">Range</a>
+          <a id="switches" href="/form/swotches">Switches</a>
+        </div>
+      </div>
+      <!-- Form list end -->
 
-    <!-- Layout list start -->
-    <button class="toggle-button" onclick="NavbarToggle()" @click="ToggleIcon">
-      Layout
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="toggle-content">
-      <a href="#">Layout</a>
+      <!-- Helpers list start -->
+      <div>
+        <button
+          class="toggle-button"
+          onclick="NavbarToggle()"
+          @click="ToggleIcon"
+        >
+          Helpers
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="toggle-content">
+          <a id="coloredLinks" href="/helpers/coloredLinks">coloredLinks</a>
+          <a id="typography" href="/helpers/typography">Typography</a>
+        </div>
+      </div>
     </div>
-    <!-- Layout list start -->
   </div>
+  <!-- Helpers list end -->
+
   <!-- Left Navigation End-->
 </template>
 
@@ -110,19 +153,37 @@ export default {
       }
     },
   },
+  mounted() {
+    let page = location.href;
+    let pageSplit = page.split("/");
+    pageSplit = pageSplit[pageSplit.length - 1];
+
+    if (pageSplit !== "") {
+      let pageID = document.getElementById(pageSplit);
+      let pageContent = pageID.parentElement;
+      let pageButton = pageID.parentElement.parentElement.childNodes[0];
+      console.log(pageButton);
+      pageButton.childNodes[1].className = "fa fa-caret-up";
+      pageButton.classList.toggle("active");
+      pageContent.style.display = "block";
+      pageID.style.color = "rgb(48, 84, 241)";
+    }
+  },
 };
 </script>
 
 <style>
 /* Left Navigation Start */
 .navbar {
-  width: 250px;
-  position: sticky;
+  width: 22vw;
+  position: fixed;
   z-index: 1;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 8vw;
+  padding-right: 20px;
+  height: calc(100vh - 4rem);
 }
 .navbar .toggle-content a {
   padding-bottom: 10px;

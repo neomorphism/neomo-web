@@ -26,12 +26,15 @@
 
       <!-- Button Start -->
       <div>
-        <button class="button outset-neomo content-btn--outset" to="/table">
+        <button
+          class="button outset-neomo content-btn--outset"
+          onclick="location.href='/getting_started/introduction'"
+        >
           <span class="ma-0 content-btn--font">GET STARTED</span>
         </button>
         <button class="button outset-neomo content-btn--outset">
           <span class="ma-0 content-btn--font">DOWNLOAD</span>
-          <span class="content-btn--version"> v0.0.1 </span>
+          <span class="content-btn--version"> v1.0.0 </span>
         </button>
       </div>
       <!-- Button End -->

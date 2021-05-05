@@ -1,17 +1,17 @@
 <template>
   <div>
     <!-- Header Start -->
-    <header class="header">
+    <header class="header neomo">
       <!-- Header-logo Start -->
       <div class="ml-1">
-        <div class="header-logo">
+        <a class="header-logo" href="/">
           <div class="header-logo--icon">
-            <img src="~/static/blacklogo2.png" />
+            <img src="~/static/blacklogo.png" />
           </div>
           <div class="header-logo--name">
-            <img src="~/static/logoname1.png" />
+            <img src="~/static/logoname.png" />
           </div>
-        </div>
+        </a>
       </div>
       <!-- Header-logo End -->
 
@@ -24,7 +24,7 @@
       <div class="mr-2" style="display: flex">
         <!-- Header-searchbar Start -->
         <input
-          class="input header-searchbar"
+          class="input header-searchbar inset-neomo"
           type="text"
           placeholder="Search Neomo"
         />
@@ -43,7 +43,7 @@
     </header>
     <!-- Header End -->
 
-    <div id="main-layout" class="colunm neomo" style="display: flex">
+    <div id="main-layout" class="colunm neomo">
       <!-- Left Navigation Start -->
       <div id="main-leftnav" class="container content-nav"><Leftnav /></div>
       <!-- Left Navigation End -->
@@ -54,7 +54,7 @@
           <nuxt />
         </div>
       </main>
-      <div class="container content-nav"><Lightbar /></div>
+      <div class="container content-nav"><Rightbar /></div>
       <!-- Contents End -->
     </div>
   </div>
@@ -62,14 +62,14 @@
 
 <script>
 import Leftnav from "@/components/Leftnav.vue";
-import Lightbar from "@/components/Lightbar.vue";
+import Rightbar from "@/components/Rightbar.vue";
 
 export default {
   data() {
     return {
       components: {
         Leftnav,
-        Lightbar,
+        Rightbar,
       },
     };
   },
@@ -89,6 +89,7 @@ export default {
 html {
   height: 100%;
   scroll-behavior: smooth;
+  background: var(--neomo);
 }
 body {
   margin: 0;
@@ -108,15 +109,18 @@ body {
   padding-right: 7vw;
 }
 .header-logo {
+  padding: 4px 0 0 4px;
   min-width: 200px;
   display: flex;
+  height: 48px;
 }
 .header-logo--icon {
-  max-height: 56px;
+  margin: auto;
+  max-height: 48px;
   max-width: 48px;
 }
 .header-logo--name {
-  margin: auto;
+  margin: 5px 0 0 2px;
   max-height: 48px;
   max-width: 150px;
 }
@@ -130,7 +134,8 @@ body {
 .header-searchbar {
   border: none;
   border-radius: 10px;
-  box-shadow: inset 1px 1px 2px #b8b9be, inset -1px -1px 2px #fff;
+  box-shadow: inset -3px -3px 7px #ffffffe5,
+    inset 3px 3px 5px rgba(25, 99, 228, 0.288);
   padding: 8px;
   margin: 11px;
   width: 300px;
@@ -151,7 +156,7 @@ body {
 /* Content CSS Start */
 #main-layout {
   margin: 56px 0 0 0 !important;
-  height: 100%;
+  height: 100vh;
   flex: 1 1 auto;
   max-width: 100%;
 }
@@ -159,6 +164,7 @@ body {
   width: 55vw;
   margin: auto;
   padding: 20px 50px 50px 50px;
+  height: 100%;
 }
 
 #main-leftnav {
@@ -193,7 +199,7 @@ p {
   color: #696969;
 }
 h2 {
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: #414141;
 }
@@ -202,6 +208,7 @@ li {
 }
 .bottom-border {
   padding-bottom: 50px;
+  margin-bottom: 50px;
   border-bottom: thin solid rgba(0, 0, 0, 0.07);
 }
 .text-strong {
@@ -217,6 +224,23 @@ li {
   background: var(--neomo);
   box-shadow: inset -3px -3px 7px #ffffffe5,
     inset 3px 3px 5px rgba(88, 100, 121, 0.288);
+}
+.tab-list {
+  float: right;
+}
+.tab ul {
+  margin: 0;
+}
+.tab ul.tab-list li {
+  margin: 1rem 0 2rem 2rem;
+}
+.tab-content--text {
+  margin-bottom: 20px;
+}
+.tab-content--text li {
+  display: block !important;
+  min-height: 0 !important;
+  padding: 0 !important;
 }
 
 @media screen and (max-width: 1400px) {

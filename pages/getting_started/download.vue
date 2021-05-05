@@ -10,32 +10,53 @@
       </p>
     </client-only>
 
-    <h2>Download CSS and JS</h2>
-    <client-only>
-      <p>
-        Download to use NEOMO's <strong class="text-strong">CSS</strong> and
-        <strong class="text-strong">JS</strong>.
-      </p></client-only
-    >
-    <ul>
-      <li><strong class="text-strong">CSS</strong></li>
-      <li><strong class="text-strong">JS</strong></li>
-    </ul>
-    <button class="button normal outset-neomo">
-      <strong class="text-strong">Download</strong>
-    </button>
-
-    <h2>CDN</h2>
-    <client-only>
-      <p></p>
-    </client-only>
-
-    <h2>NPM / YARN Package</h2>
-    <client-only>
-      <p>
-        <nuxt-content :document="doc" />
-      </p>
-    </client-only>
+    <div class="tab">
+      <div class="columns">
+        <div class="column size-12">
+          <ul class="tab-content outset-neomo">
+            <li id="content-1">
+              <div class="tab-content--title"><h2>Download</h2></div>
+              <div class="tab-content--text">
+                <client-only>
+                  <p>
+                    Download to use NEOMO's
+                    <strong class="text-strong">CSS</strong> and
+                    <strong class="text-strong">JS</strong>.
+                  </p></client-only
+                >
+                <button class="button normal outset-neomo">
+                  <strong class="text-strong">Download</strong>
+                </button>
+              </div>
+            </li>
+            <li id="content-2">
+              <div class="tab-content--title"><h2>CDN</h2></div>
+              <div class="tab-content--text">
+                <client-only>
+                  <p></p>
+                </client-only>
+              </div>
+            </li>
+            <li id="content-3">
+              <div class="tab-content--title"><h2>Package</h2></div>
+              <div class="tab-content--text">
+                <client-only>
+                  <p>npm, yarn package</p>
+                  <p>
+                    <nuxt-content :document="doc" />
+                  </p>
+                </client-only>
+              </div>
+            </li>
+          </ul>
+          <ul class="tab-list">
+            <li><a id="tab-1" href="#" class="current">Download</a></li>
+            <li><a id="tab-2" href="#">CDN</a></li>
+            <li><a id="tab-3" href="#">Package</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
