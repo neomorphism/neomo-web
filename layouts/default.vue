@@ -184,9 +184,6 @@ h2 {
   margin-bottom: 20px;
   color: #575757;
 }
-li {
-  line-height: 25px;
-}
 .bottom-border {
   padding-bottom: 50px;
   margin-bottom: 50px;

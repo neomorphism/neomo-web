@@ -69,10 +69,12 @@ document.addEventListener("DOMContentLoaded", function () {
     tab_list[i] = tab[i]
       .getElementsByClassName("tab-list")[0]
       .getElementsByTagName("a");
+
     var tab_index = tab[i]
       .getElementsByClassName("current")[0]
       .id.split("-")[1];
     var tab_content = tab[i].querySelector("#content-" + tab_index);
+
     tab_content.style.display = "block";
   }
 
@@ -86,9 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         for (var k = 0; k < tab_list.length; k++) {
           tab_index = tab_list[k].id.split("-")[1];
-          tab_content = tab_content = tab.querySelector(
-            "#content-" + tab_index
-          );
+          tab_content = tab.querySelector("#content-" + tab_index);
           tab_content.style.display = "none";
           tab_list[k].classList.remove("current");
         }
@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     }
   }
+
   /* Tab function end */
 
   /* Toast function start */
@@ -200,7 +201,7 @@ function sideNav() {
 /* Navigation function end */
 
 /* Collapsible function start */
-function ContentToggle(){
+function ContentToggle() {
   var collapse = document.getElementsByClassName("collapse");
   var expanded = document.getElementsByClassName("expanded");
   var i;
