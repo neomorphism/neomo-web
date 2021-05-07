@@ -85,7 +85,7 @@ body {
 /* Header CSS Start */
 .header {
   display: flex;
-  height: 56px;
+  height: 64px;
   border-bottom: 0.1px solid rgb(233, 233, 233);
   width: 100%;
   position: fixed;
@@ -96,7 +96,7 @@ body {
   padding-right: 7vw;
 }
 .header-logo {
-  padding: 4px 0 0 4px;
+  padding: 8px 0 0 8px;
   min-width: 200px;
   display: flex;
   height: 48px;
