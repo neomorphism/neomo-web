@@ -15,6 +15,7 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: 600;
   color: #818181;
   display: block;
   border: none;
@@ -27,7 +28,7 @@
 .navbar .toggle-button:hover {
   color: rgb(48, 84, 241);
 }
-.active {
+.navbar .active {
   border: none;
   border-radius: 10px;
   box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;

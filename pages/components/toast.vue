@@ -97,7 +97,7 @@
 
       <!-- Tab List start -->
       <ul class="tab-list tab-right">
-        <li><a class="current" id="tab-1">Basic</a></li>
+        <li><a id="tab-1" class="current">Basic</a></li>
       </ul>
       <!-- Tab List end -->
     </div>

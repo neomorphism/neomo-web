@@ -43,7 +43,8 @@
   color: #ffc71d !important;
 }
 
-.inset {
+.inset,
+.navbar .active {
   box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important;
 }
 
@@ -66,7 +67,8 @@ input:checked + .switch.outset-neomo,
 .neomo ul.pagination-round li a.active,
 .neomo ul.pagination-round li a:hover:not(.active),
 .neomo .checkbox-input:checked:after,
-.neomo .radio-input:before {
+.neomo .radio-input:before,
+.neomo .navbar .active {
   border: none;
   background: var(--neomo) !important;
   box-shadow: inset -3px -3px 7px #ffffffe5,
@@ -93,7 +95,8 @@ input:checked + .switch.outset-gray,
 .gray ul.pagination-round li a.active,
 .gray ul.pagination-round li a:hover:not(.active),
 .gray .checkbox-input:checked:after,
-.gray .radio-input:before {
+.gray .radio-input:before,
+.gray .navbar .active {
   border: none;
   background: var(--neomo-gray) !important;
   box-shadow: inset -3px -3px 7px #ffffff80,
@@ -120,7 +123,8 @@ input:checked + .switch.outset-dark,
 .dark ul.pagination-round li a.active,
 .dark ul.pagination-round li a:hover:not(.active),
 .dark .checkbox-input:checked:after,
-.dark .radio-input:before {
+.dark .radio-input:before,
+.dark .navbar .active {
   border: none;
   background: var(--neomo-dark) !important;
   box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important;
