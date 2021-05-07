@@ -88,8 +88,3 @@ sw.*
 
 # Vim swap files
 *.swp
-
-# ui framwork
-assets/neomo
-
-neomo
