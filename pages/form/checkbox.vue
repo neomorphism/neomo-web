@@ -14,7 +14,6 @@
           <div class="tab-content--title"><h2>Basic</h2></div>
 
           <!-- Content-1 Outset start -->
-          <div class="tab-content--text"><h3>Outset</h3></div>
           <div class="card inset-neomo code-exam">
             <div class="mt-2 mb-3" style="display: flow-root">
               <button

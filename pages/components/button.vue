@@ -32,33 +32,27 @@
               </div>
               <div>
                 <div class="container" style="background: white">
-                  <button class="button m-10">Default Button</button>
-
-                  <button class="button square m-10">Square Button</button>
-                </div>
-
-                <div class="container gray">
-                  <button class="button outset-gray m-10">
-                    Default Button
-                  </button>
-
-                  <button class="button outset-gray square m-10">
+                  <button class="button outset m-10">default Button</button>
+                  <button class="button outset square m-10">
                     Square Button
                   </button>
                 </div>
-
-                <div class="container dark">
-                  <button class="button outset-dark small m-10">small</button>
-                  <button class="button outset-dark normal m-10">normal</button>
-                  <button class="button outset-dark medium m-10">medium</button>
-                  <button class="button outset-dark large m-10">large</button>
-                </div>
-
                 <div class="container neomo">
-                  <button class="button outset-neomo m-10">Blue Button</button>
-
+                  <button class="button outset-neomo m-10">Neomo Button</button>
                   <button class="button outset-neomo square blue m-10">
-                    Blue Square Button
+                    Neomo Square Button
+                  </button>
+                </div>
+                <div class="container gray">
+                  <button class="button outset-gray m-10">Gray Button</button>
+                  <button class="button outset-gray square m-10">
+                    Gray Square Button
+                  </button>
+                </div>
+                <div class="container dark">
+                  <button class="button outset-dark m-10">Dark Button</button>
+                  <button class="button outset-dark square m-10">
+                    Dark Square Button
                   </button>
                 </div>
               </div>
@@ -81,31 +75,25 @@
                 </div>
               </div>
               <div class="container" style="background: white">
-                <button class="button inset m-10">Default Button</button>
-
+                <button class="button inset m-10">default Button</button>
                 <button class="button inset square m-10">Square Button</button>
               </div>
-
-              <div class="container gray">
-                <button class="button inset-gray m-10">Default Button</button>
-
-                <button class="button inset-gray square m-10">
-                  Square Button
+              <div class="container neomo">
+                <button class="button inset-neomo m-10">Neomo Button</button>
+                <button class="button inset-neomo square blue m-10">
+                  Neomo Square Button
                 </button>
               </div>
-
-              <div class="container dark">
-                <button class="button inset-dark small m-10">small</button>
-                <button class="button inset-dark normal m-10">normal</button>
-                <button class="button inset-dark medium m-10">medium</button>
-                <button class="button inset-dark large m-10">large</button>
+              <div class="container gray">
+                <button class="button inset-gray m-10">Gray Button</button>
+                <button class="button inset-gray square m-10">
+                  Gray Square Button
+                </button>
               </div>
-
-              <div class="container neomo">
-                <button class="button inset-neomo m-10">Blue Button</button>
-
-                <button class="button inset-neomo square blue m-10">
-                  Blue Square Button
+              <div class="container dark">
+                <button class="button inset-dark m-10">Dark Button</button>
+                <button class="button inset-dark square m-10">
+                  Dark Square Button
                 </button>
               </div>
             </div>
@@ -113,10 +101,49 @@
           <!-- Content-1 Inset end -->
         </li>
         <!-- Content-1 end -->
+
+        <!-- Content-2 Start -->
+        <li id="content-2" class="tab-content--list">
+          <div class="tab-content--title"><h2>Size</h2></div>
+
+          <div class="tab-content--text"><h3>Size</h3></div>
+          <div>
+            <!-- Content-2 Size start -->
+            <div class="card inset-neomo code-exam">
+              <div class="mt-2 mb-3" style="display: flow-root">
+                <button
+                  class="button outset-neomo button-exam"
+                  onclick="ContentToggle()"
+                >
+                  <i class="fas fa-code collapse"></i>
+                </button>
+
+                <div class="mt-2 expanded">
+                  <nuxt-content :document="size" />
+                </div>
+              </div>
+              <div>
+                <div class="container neomo">
+                  <button class="button outset-neomo small m-10">small</button>
+                  <button class="button outset-neomo normal m-10">
+                    normal
+                  </button>
+                  <button class="button outset-neomo medium m-10">
+                    medium
+                  </button>
+                  <button class="button outset-neomo large m-10">large</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content-2 Size end -->
+        </li>
+        <!-- Content-2 end -->
       </ul>
       <!-- Tab List start -->
       <ul class="tab-list tab-right">
-        <li><a id="tab-1" href="#" class="current">Basic</a></li>
+        <li><a id="tab-1" class="current">Basic</a></li>
+        <li><a id="tab-2">Size</a></li>
       </ul>
       <!-- Tab List end -->
     </div>
@@ -132,10 +159,14 @@ export default {
     const basicInset = await $content(
       params.slug || "components/button/basic-inset"
     ).fetch();
+    const size = await $content(
+      params.slug || "components/button/size"
+    ).fetch();
 
     return {
       basicOutset,
       basicInset,
+      size,
     };
   },
 };

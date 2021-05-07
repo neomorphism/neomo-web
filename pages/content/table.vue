@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Card</h1>
+    <h1>Table</h1>
     <client-only>
       <p class="bottom-border">
         Using example code, you can quickly and easily create a table with a
