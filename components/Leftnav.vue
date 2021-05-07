@@ -35,7 +35,6 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="toggle-content">
-          <a id="layout" href="/layout/layout">Layout</a>
           <a id="columns" href="/layout/columns">Columns</a>
         </div>
       </div>
@@ -103,7 +102,6 @@
           <a id="checkbox" href="/form/checkbox">Checkbox</a>
           <a id="file" href="/form/file">File</a>
           <a id="input" href="/form/input">Input</a>
-          <a id="inputGroup" href="/form/inputGroup">Input Group</a>
           <a id="labels" href="/form/labels">Labels</a>
           <a id="radio" href="/form/radio">Radio</a>
           <a id="range" href="/form/range">Range</a>
