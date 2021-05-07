@@ -2,7 +2,9 @@
   <div>
     <h1>Typography</h1>
     <client-only>
-      <p class="bottom-border"></p>
+      <p class="bottom-border">
+        Neomo gives you some nice tools for making your text styles
+      </p>
     </client-only>
 
     <div class="tab">
