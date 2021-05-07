@@ -107,7 +107,7 @@
           <a id="labels" href="/form/labels">Labels</a>
           <a id="radio" href="/form/radio">Radio</a>
           <a id="range" href="/form/range">Range</a>
-          <a id="switches" href="/form/swotches">Switches</a>
+          <a id="switches" href="/form/switches">Switches</a>
         </div>
       </div>
       <!-- Form list end -->
@@ -123,7 +123,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="toggle-content">
-          <a id="coloredLinks" href="/helpers/coloredLinks">coloredLinks</a>
+          <a id="coloredLinks" href="/helpers/coloredLinks">Colored Links</a>
           <a id="typography" href="/helpers/typography">Typography</a>
         </div>
       </div>
