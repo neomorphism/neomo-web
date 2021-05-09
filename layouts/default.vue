@@ -435,10 +435,10 @@ h2 {
 }
 .nuxt-content pre {
   margin: 0;
+  margin-bottom: 1rem;
   border: none;
-  /* background: var(--neomo); */
-  background: rgb(211, 231, 255);
-  font-family: Menlo, Consolas, monospace !important;
+  line-height: 18px;
+  background: rgb(223, 237, 255);
 }
 
 .code-exam {
