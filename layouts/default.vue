@@ -6,19 +6,23 @@
       <div class="ml-1">
         <a class="header-logo" href="/">
           <div class="header-logo--icon">
-            <img src="~/static/blacklogo.png" />
+            <img
+              src="~/static/blacklogo.png"
+              style="height: 48px; width: auto"
+            />
           </div>
           <div class="header-logo--name">
-            <img src="~/static/logoname.png" />
+            <img
+              src="~/static/logoname.png"
+              style="height: auto; width: 150px"
+            />
           </div>
         </a>
       </div>
       <!-- Header-logo End -->
 
       <!-- Header-version Start -->
-      <div class="header-version">
-        <span>v1.0.0</span>
-      </div>
+      <div class="header-version">v1.0.0</div>
       <!-- Header-version End -->
 
       <div class="mr-2" style="display: flex">
@@ -27,7 +31,49 @@
           class="input header-searchbar inset-neomo"
           type="text"
           placeholder="Search Neomo"
+          @input="updateInput"
         />
+        <div id="search-box" class="card outset-neomo">
+          <div>
+            <p id="search-result">No results found for "{{ inputText }}"</p>
+          </div>
+          <p id="search-title--start">Getting Started</p>
+          <ul id="search-start" class="nav-column">
+            <li v-for="item in startedResult" :key="item.id">
+              <a class="nav-link" :href="item[1]">{{ item[0] }}</a>
+            </li>
+          </ul>
+          <p id="search-title--layout">Layout</p>
+          <ul id="search-layout" class="nav-column search-layout">
+            <li v-for="item in layoutResult" :key="item.id">
+              <a class="nav-link" :href="item[1]">{{ item[0] }}</a>
+            </li>
+          </ul>
+          <p id="search-title--comp">Components</p>
+          <ul id="search-comp" class="nav-column">
+            <li v-for="item in compResult" :key="item.id">
+              <a class="nav-link" :href="item[1]">{{ item[0] }}</a>
+            </li>
+          </ul>
+          <p id="search-title--content">Content</p>
+          <ul id="search-content" class="nav-column">
+            <li v-for="item in contentResult" :key="item.id">
+              <a class="nav-link" :href="item[1]">{{ item[0] }}</a>
+            </li>
+          </ul>
+          <p id="search-title--form">Form</p>
+          <ul id="search-form" class="nav-column">
+            <li v-for="item in formResult" :key="item.id">
+              <a class="nav-link" :href="item[1]">{{ item[0] }}</a>
+            </li>
+          </ul>
+          <p id="search-title--helper">Helpers</p>
+          <ul id="search-helper" class="nav-column">
+            <li v-for="item in helperResult" :key="item.id">
+              <a class="nav-link" :href="item[1]">{{ item[0] }}</a>
+            </li>
+          </ul>
+        </div>
         <!-- Header-searchbar End -->
       </div>
     </header>
@@ -50,15 +96,164 @@
 </template>
 
 <script>
+/* eslint-disable */
 import Leftnav from "@/components/Leftnav.vue";
 
 export default {
   data() {
     return {
+      inputText: "",
+      searchStarted: [
+        ["introduction", "/getting_started/introduction"],
+        ["download", "/getting_started/download"],
+        [`modifiers syntax`, "/getting_started/modifiers"],
+      ],
+      searchLayout: [["columns", "/layout/columns"]],
+      searchComp: [
+        ["alert", "/components/alert"],
+        ["badge", "/components/badge"],
+        ["breadcrumb", "/components/breadcrumb"],
+        ["button", "/components/button"],
+        ["card", "/components/card"],
+        ["dropdown", "/components/dropdown"],
+        ["icon", "/components/icon"],
+        ["modal", "/components/modal"],
+        ["navbar", "/components/navbar"],
+        ["navigation", "/components/navigation"],
+        ["pagination", "/components/pagination"],
+        ["progressbar", "/components/progressbar"],
+        ["select", "/components/select"],
+        ["spinner", "/components/spinner"],
+        ["tab", "/components/tab"],
+        ["toast", "/components/toast"],
+        ["tooltip", "/components/tooltip"],
+      ],
+      searchForm: [
+        ["checkbox", "/form/checkbox"],
+        ["file", "/form/file"],
+        ["input", "/form/input"],
+        ["labels", "/form/labels"],
+        ["radio", "/form/radio"],
+        ["range", "/form/range"],
+        ["switches", "/form/switches"],
+      ],
+      searchContent: [["table", "/content/table"]],
+      searchHelper: [
+        [`colored links`, "/helpers/coloredLinks"],
+        ["typography", "/helpers/typography"],
+      ],
+
+      startedResult: [],
+      layoutResult: [],
+      compResult: [],
+      contentResult: [],
+      formResult: [],
+      helperResult: [],
       components: {
         Leftnav,
       },
     };
+  },
+  methods: {
+    updateInput(event) {
+      const updatedText = event.target.value;
+      this.inputText = updatedText;
+      if (this.inputText !== "") {
+        document.getElementById("search-box").style.display = "block";
+        document.getElementById("search-title--start").style.display = "none";
+        document.getElementById("search-title--layout").style.display = "none";
+        document.getElementById("search-title--comp").style.display = "none";
+        document.getElementById("search-title--content").style.display = "none";
+        document.getElementById("search-title--form").style.display = "none";
+        document.getElementById("search-title--helper").style.display = "none";
+        document.getElementById("search-result").style.display = "block";
+
+        const value = new RegExp(this.inputText, "i");
+        let i;
+
+        this.startedResult = [];
+        this.layoutResult = [];
+        this.compResult = [];
+        this.contentResult = [];
+        this.formResult = [];
+        this.helperResult = [];
+
+        for (i = 0; i < this.searchStarted.length; i++) {
+          if (value.exec(this.searchStarted[i][0])) {
+            this.startedResult.push(this.searchStarted[i]);
+            document.getElementById("search-start").style.display = "block";
+
+            if (this.startedResult.length > 0) {
+              document.getElementById("search-result").style.display = "none";
+              document.getElementById("search-title--start").style.display =
+                "block";
+            }
+          }
+        }
+        for (i = 0; i < this.searchLayout.length; i++) {
+          if (value.exec(this.searchLayout[i][0])) {
+            this.layoutResult.push(this.searchLayout[i]);
+            document.getElementById("search-layout").style.display = "block";
+
+            if (this.layoutResult.length > 0) {
+              document.getElementById("search-result").style.display = "none";
+              document.getElementById("search-title--layout").style.display =
+                "block";
+            }
+          }
+        }
+        for (i = 0; i < this.searchComp.length; i++) {
+          if (value.exec(this.searchComp[i][0])) {
+            this.compResult.push(this.searchComp[i]);
+            document.getElementById("search-comp").style.display = "block";
+
+            if (this.compResult.length > 0) {
+              document.getElementById("search-result").style.display = "none";
+              document.getElementById("search-title--comp").style.display =
+                "block";
+            }
+          }
+        }
+        for (i = 0; i < this.searchContent.length; i++) {
+          if (value.exec(this.searchContent[i][0])) {
+            this.contentResult.push(this.searchContent[i]);
+            document.getElementById("search-content").style.display = "block";
+
+            if (this.contentResult.length > 0) {
+              document.getElementById("search-result").style.display = "none";
+              document.getElementById("search-title--content").style.display =
+                "block";
+            }
+          }
+        }
+        for (i = 0; i < this.searchForm.length; i++) {
+          if (value.exec(this.searchForm[i][0])) {
+            this.formResult.push(this.searchForm[i]);
+            document.getElementById("search-form").style.display = "block";
+
+            if (this.formResult.length > 0) {
+              document.getElementById("search-result").style.display = "none";
+              document.getElementById("search-title--form").style.display =
+                "block";
+            }
+          }
+        }
+        for (i = 0; i < this.searchHelper.length; i++) {
+          if (value.exec(this.searchHelper[i][0])) {
+            this.helperResult.push(this.searchHelper[i]);
+            document.getElementById("search-helper").style.display = "block";
+
+            if (this.helperResult.length > 0) {
+              document.getElementById("search-result").style.display = "none";
+              document.getElementById("search-title--helper").style.display =
+                "block";
+            }
+          }
+        }
+      } else {
+        document.getElementById("search-box").style.display = "none";
+      }
+    },
   },
 };
 </script>
@@ -119,13 +314,56 @@ body {
   font-size: 0.86rem;
 }
 .header-searchbar {
+  padding-left: 1.2rem;
   border: none;
   border-radius: 10px;
-  box-shadow: inset -3px -3px 7px #ffffffe5,
-    inset 3px 3px 5px rgba(25, 99, 228, 0.288);
-  padding: 8px;
   margin: 11px;
   width: 300px;
+}
+.header-searchbar:focus {
+  box-shadow: inset -3px -3px 7px #ffffffe5,
+    inset 3px 3px 7px rgba(6, 93, 243, 0.288) !important;
+}
+
+/* serch-box Start */
+#search-box {
+  display: none;
+  position: absolute;
+  top: 66px;
+  padding: 8px;
+  width: 300px;
+}
+
+#search-start,
+#search-layout,
+#search-comp,
+#search-content,
+#search-form,
+#search-helper {
+  display: none;
+}
+#search-box .nav-link {
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  font-size: 0.9rem;
+}
+#search-box .nav-link:hover {
+  color: blue;
+}
+#search-title--start,
+#search-title--layout,
+#search-title--comp,
+#search-title--content,
+#search-title--form,
+#search-title--helper {
+  font-size: 1rem;
+  color: rgb(43, 43, 43);
+  margin-left: 0.5rem;
+  font-weight: 700;
+  display: none;
+}
+.search-result {
+  display: none;
+  font-size: 0.9rem;
 }
 
 /* Content CSS Start */
@@ -198,7 +436,9 @@ h2 {
 .nuxt-content pre {
   margin: 0;
   border: none;
-  background: var(--neomo);
+  /* background: var(--neomo); */
+  background: rgb(211, 231, 255);
+  font-family: Menlo, Consolas, monospace !important;
 }
 
 .code-exam {
