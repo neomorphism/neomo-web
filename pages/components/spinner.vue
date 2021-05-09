@@ -26,11 +26,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="borderWhite" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="borderWhite" />
+              </div>
+
               <div class="loader border-white point-purple"></div>
             </div>
             <!-- Content-1 border-white end -->
@@ -45,11 +45,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="borderGray" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="borderGray" />
+              </div>
+
               <div class="loader border-gray point-purple"></div>
             </div>
           </div>
@@ -72,10 +72,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="pointColor" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="pointColor" />
               </div>
 
               <div class="loader border-white point-purple"></div>
@@ -103,11 +102,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="button" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="button" />
+              </div>
+
               <div class="container neomo" style="text-align: center">
                 <button class="button outset-neomo">
                   <div

@@ -22,10 +22,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicOutset" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicOutset" />
               </div>
 
               <div class="tab">
@@ -70,10 +69,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicInset" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicInset" />
               </div>
 
               <div class="tab">
@@ -127,10 +125,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="vertical" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="vertical" />
               </div>
 
               <div class="tab vertical">

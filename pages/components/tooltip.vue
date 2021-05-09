@@ -22,10 +22,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicOutset" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicOutset" />
               </div>
 
               <div class="container p-10" style="background: white">
@@ -81,10 +80,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="color" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="color" />
               </div>
 
               <div class="container m-10 p-10">
@@ -96,12 +94,11 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="tooltip neomo">
-                  <span>Bottom</span>
-                  <div class="tooltip-content outset-neomo bottom">
-                    <p>tooltip!</p>
-                  </div>
+              </div>
+              <div class="tooltip neomo">
+                <span>Bottom</span>
+                <div class="tooltip-content outset-neomo bottom">
+                  <p>tooltip!</p>
                 </div>
 
                 <div class="tooltip neomo">
@@ -139,11 +136,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="size" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="size" />
+              </div>
+
               <div style="text-align: center">
                 <span class="badge outset-neomo badge-sm">NEOMO</span>
                 <span class="badge outset-neomo badge-md">NEOMO</span>

@@ -29,28 +29,18 @@
                 <nuxt-content :document="link" />
               </div>
 
-              <div style="text-align: center">
-                <p>
-                  <a href="https://www.google.co.kr" class="link-info"
-                    >Info Link</a
-                  >
-                </p>
-                <p>
-                  <a href="https://www.google.co.kr" class="link-success"
-                    >Success Link</a
-                  >
-                </p>
-                <p>
-                  <a href="https://www.google.co.kr" class="link-danger"
-                    >Danger Link</a
-                  >
-                </p>
-                <p>
-                  <a href="https://www.google.co.kr" class="link-warning"
-                    >Warning Link</a
-                  >
-                </p>
-              </div>
+              <form action="">
+                <div class="floatinglabel-field">
+                  <input
+                    id="fullname"
+                    type="text"
+                    name="fullname"
+                    placeholder="Your Name"
+                    class="floatinglabel-input"
+                  />
+                  <label for="fullname" class="floatinglabel-label">Name</label>
+                </div>
+              </form>
             </div>
             <!-- Content-1 color end -->
           </div>

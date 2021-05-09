@@ -24,11 +24,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="fontSize" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="fontSize" />
+              </div>
+
               <p class="font-size-1">This is font-size-1</p>
               <p class="font-size-2">This is font-size-2</p>
               <p class="font-size-3">This is font-size-3</p>
@@ -78,11 +78,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="fontTrans" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="fontTrans" />
+              </div>
+
               <p class="font-size-2 font-transform-lowercase">
                 font-transform-lowercase
               </p>
@@ -115,11 +115,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="text" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="text" />
+              </div>
+
               <p class="font-size-3 text-left">This is text-left</p>
               <p class="font-size-3 text-center">This is text-center</p>
               <p class="font-size-3 text-right">This is text-right</p>

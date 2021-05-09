@@ -25,11 +25,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicOutset" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicOutset" />
+              </div>
+
               <div style="text-align: center">
                 <select class="outset-neomo">
                   <option selected>This is select menu</option>
@@ -51,11 +51,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicInset" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicInset" />
+              </div>
+
               <div style="text-align: center">
                 <select class="inset-neomo">
                   <option selected>This is select menu</option>
@@ -85,11 +85,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="color" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="color" />
+              </div>
+
               <div style="text-align: center">
                 <select class="outset-neomo info">
                   <option selected>This is select menu</option>
@@ -137,11 +137,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="multiple" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="multiple" />
+              </div>
+
               <div style="text-align: center">
                 <select multiple class="outset-neomo">
                   <option selected>This is select menu</option>

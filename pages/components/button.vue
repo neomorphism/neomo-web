@@ -25,10 +25,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicOutset" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicOutset" />
               </div>
               <div>
                 <div class="container" style="background: white">
@@ -69,11 +68,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicInset" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicInset" />
+              </div>
+
               <div class="container" style="background: white">
                 <button class="button inset m-10">default Button</button>
                 <button class="button inset square m-10">Square Button</button>
@@ -117,11 +116,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="size" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="size" />
+              </div>
+
               <div>
                 <div class="container neomo">
                   <button class="button outset-neomo small m-10">small</button>

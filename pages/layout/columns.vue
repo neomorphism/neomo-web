@@ -30,10 +30,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basic" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basic" />
               </div>
 
               <div class="columns text-center">
@@ -74,11 +73,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="size" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="size" />
+              </div>
+
               <div class="layout">
                 <div class="columns text-center">
                   <div class="column size-1 box">
@@ -167,10 +166,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="order" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="order" />
               </div>
 
               <div class="columns text-center">
@@ -234,10 +232,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="interval" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="interval" />
               </div>
 
               <div class="columns text-center interval-1">
@@ -298,10 +295,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="justify" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="justify" />
               </div>
 
               <div class="layout text-center">
@@ -364,10 +360,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="alignment" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="alignment" />
               </div>
 
               <div class="layout text-center">
@@ -442,10 +437,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="responsive" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="responsive" />
               </div>
 
               <div class="columns text-center">
