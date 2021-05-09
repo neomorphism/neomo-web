@@ -156,11 +156,10 @@ export default {
     let pageSplit = page.split("/");
     pageSplit = pageSplit[pageSplit.length - 1];
 
-    if (pageSplit !== "") {
+    if (pageSplit !== "" && pageSplit !== "template") {
       let pageID = document.getElementById(pageSplit);
       let pageContent = pageID.parentElement;
       let pageButton = pageID.parentElement.parentElement.childNodes[0];
-      console.log(pageButton);
       pageButton.childNodes[1].className = "fa fa-caret-up";
       pageButton.classList.toggle("active");
       pageContent.style.display = "block";
