@@ -68,7 +68,8 @@ input:checked + .switch.outset-neomo,
 .neomo ul.pagination-round li a:hover:not(.active),
 .neomo .checkbox-input:checked:after,
 .neomo .radio-input:before,
-.neomo .navbar .active {
+.neomo .navbar .active,
+.neomo .nav-link:hover {
   border: none;
   background: var(--neomo) !important;
   box-shadow: inset -3px -3px 7px #ffffffe5,

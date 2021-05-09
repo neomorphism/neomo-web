@@ -47,7 +47,7 @@
               <div class="container gray p-10">
                 <div class="tooltip gray">
                   <span>Hover here!</span>
-                  <div class="tooltip-content oustest-gray top">
+                  <div class="tooltip-content outset-gray top">
                     <p>tooltip!</p>
                   </div>
                 </div>
@@ -88,10 +88,12 @@
               </div>
 
               <div class="container m-10 p-10">
-                <div class="tooltip neomo">
-                  <span>Top</span>
-                  <div class="tooltip-content outset-neomo top">
-                    <p>tooltip!</p>
+                <div class="container">
+                  <div class="tooltip neomo">
+                    <span>Top</span>
+                    <div class="tooltip-content outset-neomo top">
+                      <p>tooltip!</p>
+                    </div>
                   </div>
                 </div>
 
