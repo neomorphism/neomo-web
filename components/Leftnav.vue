@@ -162,7 +162,9 @@ export default {
       let pageButton = pageID.parentElement.parentElement.childNodes[0];
       pageButton.childNodes[1].className = "fa fa-caret-up";
       pageButton.classList.toggle("active");
-      pageContent.style.display = "block";
+      pageContent.style.visibility = "visible";
+      pageContent.style.maxHeight = "100vh";
+      pageContent.style.opacity = "1";
       pageID.style.color = "rgb(48, 84, 241)";
     }
   },

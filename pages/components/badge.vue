@@ -25,11 +25,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicOutset" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicOutset" />
+              </div>
+
               <div style="text-align: center">
                 <span class="badge outset-neomo">NEOMO</span>
               </div>
@@ -46,11 +46,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicInset" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicInset" />
+              </div>
+
               <div style="text-align: center">
                 <span class="badge inset-neomo">NEOMO</span>
               </div>
@@ -75,11 +75,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="color" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="color" />
+              </div>
+
               <div style="text-align: center">
                 <span class="badge outset-neomo info">NEOMO</span>
                 <span class="badge outset-neomo success">NEOMO</span>
@@ -107,11 +107,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="size" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="size" />
+              </div>
+
               <div style="text-align: center">
                 <span class="badge outset-neomo badge-sm">NEOMO</span>
                 <span class="badge outset-neomo badge-md">NEOMO</span>

@@ -7,6 +7,11 @@
         easily.
       </p>
     </client-only>
+    <p>아래에 복사할 내용을 입력하고 버튼을 클릭하세요!</p>
+    <p>
+      <input id="myInput" class="myInput" />
+      <button onclick="copyToClipboard()">Click</button>
+    </p>
 
     <div class="tab">
       <ul class="tab-content outset-neomo">
@@ -25,11 +30,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicOutset" />
-                </div>
               </div>
+              <div id="myInpu" class="mt-2 expanded">
+                <nuxt-content :document="basicOutset" />
+              </div>
+
               <div class="alert outset-neomo" role="alert">This is alert!</div>
             </div>
             <!-- Content-1 Outset end -->
@@ -44,11 +49,11 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="basicInset" />
-                </div>
               </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="basicInset" />
+              </div>
+
               <div class="alert inset-neomo" role="alert">This is alert!</div>
             </div>
           </div>
@@ -71,10 +76,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="color" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="color" />
               </div>
 
               <div class="alert outset-neomo info" role="alert">
@@ -110,10 +114,9 @@
                 >
                   <i class="fas fa-code collapse"></i>
                 </button>
-
-                <div class="mt-2 expanded">
-                  <nuxt-content :document="dismissing" />
-                </div>
+              </div>
+              <div class="mt-2 expanded">
+                <nuxt-content :document="dismissing" />
               </div>
 
               <div id="Alt" class="outset-neomo alert">
