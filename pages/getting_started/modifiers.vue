@@ -284,7 +284,7 @@ strong {
   padding: 2px 5px 2px 5px;
 }
 code {
-  margin: 0 !important;
+  margin: 0;
 }
 .copy-btn {
   display: none;
