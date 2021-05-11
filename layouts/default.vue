@@ -2,6 +2,14 @@
   <div>
     <!-- Header Start -->
     <header class="header neomo">
+      <button class="modal-button outset-neomo header-menu--button">a</button>
+      <div class="modal">
+        <div class="modal-content--md outset-neomo">
+          <span class="modal-close">&times;</span>
+          <div id="main-leftnav" class="container content-nav--hidden"></div>
+        </div>
+      </div>
+
       <!-- Header-logo Start -->
       <div class="ml-1">
         <a class="header-logo" href="/">
@@ -81,7 +89,9 @@
 
     <div id="main-layout" class="colunm neomo">
       <!-- Left Navigation Start -->
-      <div id="main-leftnav" class="container content-nav"><Leftnav /></div>
+      <div id="main-leftnav" class="container content-nav pt-3">
+        <Leftnav />
+      </div>
       <!-- Left Navigation End -->
 
       <!-- main Start -->
@@ -255,6 +265,9 @@ export default {
       }
     },
   },
+  mounted() {
+    copyToClipboard();
+  },
 };
 </script>
 
@@ -268,6 +281,7 @@ export default {
   margin: 0;
   max-width: 100%;
 }
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -323,6 +337,20 @@ body {
 .header-searchbar:focus {
   box-shadow: inset -3px -3px 7px #ffffffe5,
     inset 3px 3px 7px rgba(6, 93, 243, 0.288) !important;
+}
+
+.header-menu--button {
+  display: none;
+}
+
+.content-nav--hidden .navbar {
+  width: 100vw;
+  padding: 0;
+  position: relative !important;
+}
+.content-nav--hidden .card {
+  box-shadow: none !important;
+  padding: 0;
 }
 
 /* serch-box Start */
@@ -438,15 +466,61 @@ h2 {
   margin-bottom: 1rem;
   border: none;
   line-height: 18px;
-  background: rgb(223, 237, 255);
+  background: rgb(223, 237, 255) !important;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 12px;
 }
-
+pre .copy-btn i {
+  opacity: 0.4;
+}
+.copy-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  background: rgb(223, 237, 255);
+  box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #3981fd49 !important;
+}
+.copy-btn:hover {
+  border: none;
+  box-shadow: inset -3px -3px 7px #ffffffe5,
+    inset 3px 3px 5px rgba(54, 122, 240, 0.288) !important;
+}
+.copy-btn.modal-button {
+  min-width: auto;
+  padding: 10px;
+}
+pre .modal-content--sm {
+  font-size: 0.9rem;
+  font-family: "Jeju Gothic", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20%;
+}
+pre .modal-content--sm p {
+  margin-left: 2rem;
+}
+pre .modal-content--sm span {
+  margin: auto 1rem;
+  font-size: 1.3rem;
+}
+.nuxt-content code {
+  font-family: consolas;
+  margin-top: 12px;
+}
 .code-exam {
   padding: 10px 80px 40px 80px !important;
   margin-bottom: 40px;
 }
 .expanded {
-  display: none;
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.2s linear;
 }
 .button i {
   padding: 10px;
@@ -457,12 +531,25 @@ h2 {
   border-radius: 100%;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1430px) {
   .content-nav {
     display: none !important;
   }
-  .main {
-    width: 100%;
+  .header-menu--button {
+    display: block !important;
   }
+  .main {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header-version {
+    display: none !important;
+  }
+}
+
+:root {
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 </style>
