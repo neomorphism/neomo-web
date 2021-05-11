@@ -2,13 +2,22 @@
   <div>
     <!-- Header Start -->
     <header class="header neomo">
-      <button class="modal-button outset-neomo header-menu--button">a</button>
-      <div class="modal">
-        <div class="modal-content--md outset-neomo">
+      <!-- Header-menu Start -->
+      <button
+        class="modal-button outset-neomo header-menu--button"
+        style="cursor: pointer"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="modal" style="overflow-y: hidden">
+        <div class="modal-content--sm outset-neomo modal-menu--content">
           <span class="modal-close">&times;</span>
-          <div id="main-leftnav" class="container content-nav--hidden"></div>
+          <div id="main-leftnav" class="container content-nav--hidden">
+            <Modalnav />
+          </div>
         </div>
       </div>
+      <!-- Header-menu End -->
 
       <!-- Header-logo Start -->
       <div class="ml-1">
@@ -108,6 +117,7 @@
 <script>
 /* eslint-disable */
 import Leftnav from "@/components/Leftnav.vue";
+import Modalnav from "@/components/Modalnav.vue";
 
 export default {
   data() {
@@ -161,6 +171,7 @@ export default {
       helperResult: [],
       components: {
         Leftnav,
+        Modalnav,
       },
     };
   },
@@ -178,7 +189,8 @@ export default {
         document.getElementById("search-title--helper").style.display = "none";
         document.getElementById("search-result").style.display = "block";
 
-        const value = new RegExp(this.inputText, "i");
+        const textEx = this.inputText.replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
+        const value = new RegExp(textEx, "i");
         let i;
 
         this.startedResult = [];
@@ -341,6 +353,17 @@ body {
 
 .header-menu--button {
   display: none;
+  min-width: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 0 0;
+  padding: 5px;
+}
+
+.modal-menu--content {
+  margin: 0;
+  width: 350px;
+  z-index: 10;
 }
 
 .content-nav--hidden .navbar {

@@ -172,10 +172,15 @@ function NavbarToggle() {
     if (toggle[i] === event.target) {
       toggle[i].classList.toggle("active");
       var toggleContent = toggle[i].nextElementSibling;
-      if (toggleContent.style.display === "block") {
-        toggleContent.style.display = "none";
+
+      if (toggleContent.style.visibility === "visible") {
+        toggleContent.style.visibility = "hidden";
+        toggleContent.style.maxHeight = "0";
+        toggleContent.style.opacity = "0";
       } else {
-        toggleContent.style.display = "block";
+        toggleContent.style.visibility = "visible";
+        toggleContent.style.maxHeight = "100vh";
+        toggleContent.style.opacity = "1";
       }
     }
   }
@@ -207,12 +212,16 @@ function ContentToggle() {
 
   for (i = 0; i < collapse.length; i++) {
     if (event.target === collapse[i]) {
-      if (expanded[i].style.display === "block") {
-        expanded[i].style.display = "none";
+      if (expanded[i].style.visibility === "visible") {
+        expanded[i].style.visibility = "hidden";
+        expanded[i].style.maxHeight = "0";
+        expanded[i].style.opacity = "0";
       } else {
-        expanded[i].style.display = "block";
+        expanded[i].style.visibility = "visible";
+        expanded[i].style.maxHeight = "100vh";
+        expanded[i].style.opacity = "1";
       }
     }
   }
 }
-/* collapsible function end */
+/* Collapsible function end */
