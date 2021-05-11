@@ -21,8 +21,21 @@ export default {
       {
         src: "/neomo.js",
       },
+      {
+        src: "/site.js",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js",
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
