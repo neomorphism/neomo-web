@@ -7,11 +7,6 @@
         easily.
       </p>
     </client-only>
-    <p>아래에 복사할 내용을 입력하고 버튼을 클릭하세요!</p>
-    <p>
-      <input id="myInput" class="myInput" />
-      <button onclick="copyToClipboard()">Click</button>
-    </p>
 
     <div class="tab">
       <ul class="tab-content outset-neomo">

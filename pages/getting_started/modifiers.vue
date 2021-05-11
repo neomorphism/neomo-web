@@ -202,11 +202,11 @@
             </li>
           </ul>
           <ul class="tab-list tab-right">
-            <li><a id="tab-1" href="#" class="current">Default</a></li>
-            <li><a id="tab-2" href="#">Outset</a></li>
-            <li><a id="tab-3" href="#">Inset</a></li>
-            <li><a id="tab-4" href="#">Color</a></li>
-            <li><a id="tab-5" href="#">Shadow</a></li>
+            <li><a id="tab-1" class="current">Default</a></li>
+            <li><a id="tab-2">Outset</a></li>
+            <li><a id="tab-3">Inset</a></li>
+            <li><a id="tab-4">Color</a></li>
+            <li><a id="tab-5">Shadow</a></li>
           </ul>
         </div>
       </div>
@@ -283,10 +283,10 @@ strong {
   background-color: #cfccccf1;
   padding: 2px 5px 2px 5px;
 }
-
-.nuxt-content pre {
-  border-radius: 10px;
-  box-shadow: inset -3px -3px 7px #ffffffe5,
-    inset 3px 3px 5px rgba(63, 117, 209, 0.288);
+code {
+  margin: 0 !important;
+}
+.copy-btn {
+  display: none;
 }
 </style>
