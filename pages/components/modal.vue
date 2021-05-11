@@ -14,7 +14,7 @@
           <div class="tab-content--title"><h2>Basic</h2></div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 You can overlay the modal window by clicking the modal button.
               </p>
             </client-only>
@@ -53,7 +53,7 @@
           <div class="tab-content--title">Size</div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 Because modal can contain anything you want,You can design by
                 using card class.<br />
                 Also, you can choose the size of the modal content using sm, md,

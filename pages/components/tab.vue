@@ -2,7 +2,9 @@
   <div>
     <h1>Tab</h1>
     <client-only>
-      <p class="bottom-border"></p>
+      <p class="bottom-border">
+        Tab can also be used as a neomo design. Try using it simply.
+      </p>
     </client-only>
 
     <div class="tab1">
@@ -10,7 +12,12 @@
         <li id="content1-1" class="tab-content--list">
           <div class="tab-content--title"><h2>Basic</h2></div>
 
-          <div class="tab-content--text"><h3>Outset</h3></div>
+          <div class="tab-content--text">
+            <h3>Outset</h3>
+            <client-only>
+              <p>By default, the tab class is a horizontal structure.</p>
+            </client-only>
+          </div>
           <!-- Content-1 Start -->
           <div>
             <!-- Content-1 Outset start -->
@@ -110,7 +117,12 @@
         <li id="content1-2" class="tab-content--list">
           <div class="tab-content--title"><h2>Vertical</h2></div>
 
-          <div class="tab-content--text"><h3>Vertical</h3></div>
+          <div class="tab-content--text">
+            <h3>Vertical</h3>
+            <client-only>
+              <p>You can also use the vertical structure.</p>
+            </client-only>
+          </div>
           <!-- Content-2 Start -->
           <div>
             <!-- Content-2 Vertical start -->

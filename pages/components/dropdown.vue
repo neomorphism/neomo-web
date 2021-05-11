@@ -14,7 +14,7 @@
           <div class="tab-content--title"><h2>Basic</h2></div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 You can open a dropdown menu by hovering the button.<br />
                 Also, you can add content via dropdown-content--item.
               </p>
@@ -97,9 +97,7 @@
           <div class="tab-content--title">Toggle</div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
-                You can open a dropdown menu by clicking the button.<br />
-              </p>
+              <p>You can open a dropdown menu by clicking the button.<br /></p>
             </client-only>
 
             <!-- Content-2 Toggle start -->

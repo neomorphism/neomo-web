@@ -16,7 +16,7 @@
           <div class="tab-content--title"><h2>Basic</h2></div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 breadcrumb is used to declare classes in nav tags. You can use
                 it as a way to configure subul tags and li tags. You can also
                 display the current page by giving the li-tag the is-active
@@ -116,7 +116,7 @@
           <div class="tab-content--title">Justify</div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 Breadcrumb has three sorting options When used exclusively in
                 nav tags, add left-aligned, centered classes, add right classes
                 and right-aligned options.
@@ -269,7 +269,7 @@
           <div class="tab-content--title">Separator</div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 You can select one of three options: the page separator icon in
                 the breadcrumb. By default, it's a slash-shaped separator, and
                 each time you add a direction class and arrow class, it's a

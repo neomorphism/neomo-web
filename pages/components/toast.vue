@@ -19,7 +19,7 @@
           <div class="tab-content--title"><h2>Basic</h2></div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 [The delete function works as follows through the javascript
                 function]<br />
                 By default, toast is used in conjunction with the show class,

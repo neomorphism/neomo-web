@@ -17,7 +17,7 @@
           <div class="tab-content--title"><h2>Basic</h2></div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 You can use it without the &lt;li&gt; tag.<br />
                 You can prevent the use of the element by declaring class
                 disable
@@ -82,9 +82,7 @@
           <div class="tab-content--title">Animation</div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
-                You can animate through nav-link--animation class.
-              </p>
+              <p>You can animate through nav-link--animation class.</p>
             </client-only>
 
             <!-- Content-2 Animation start -->
@@ -118,9 +116,7 @@
           <div class="tab-content--title">Vertical</div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
-                You can switch to vertical form through nav-column class.
-              </p>
+              <p>You can switch to vertical form through nav-column class.</p>
             </client-only>
 
             <!-- Content-3 Vertical start -->

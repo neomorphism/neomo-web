@@ -12,9 +12,7 @@
           <div class="tab-content--title"><h2>Basic</h2></div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
-                By using disabled classes, you can't click pagination list.
-              </p>
+              <p>By using disabled classes, you can't click pagination list.</p>
             </client-only>
 
             <!-- Content-1 Basic start -->
@@ -85,7 +83,7 @@
           <div class="tab-content--title">Icon</div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 You can use icons at the beginning and the end of the
                 pagination.
               </p>
@@ -138,7 +136,7 @@
           <div class="tab-content--title">Round</div>
           <div class="tab-content--text">
             <client-only>
-              <p style="margin-bottom: 80px">
+              <p>
                 You can use round pagination using a pagination-round class.
               </p>
             </client-only>
