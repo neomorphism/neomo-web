@@ -154,7 +154,9 @@ export default {};
   width: 100vw;
   padding: 0;
 }
-
+.header-menu--button {
+  display: none !important;
+}
 /* Left Navigation Start */
 .navbar {
   display: none;

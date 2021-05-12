@@ -12,7 +12,7 @@
       <div class="modal" style="overflow-y: hidden">
         <div class="modal-content--sm outset-neomo modal-menu--content">
           <span class="modal-close">&times;</span>
-          <div id="main-leftnav" class="container content-nav--hidden">
+          <div id="main-leftnav--hidden" class="container content-nav--hidden">
             <Modalnav />
           </div>
         </div>
@@ -431,7 +431,8 @@ body {
   height: 100%;
 }
 
-#main-leftnav {
+#main-leftnav,
+#main-leftnav--hidden {
   left: 0;
 }
 

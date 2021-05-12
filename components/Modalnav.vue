@@ -67,7 +67,6 @@
           <a id="spinner2" href="/components/spinner">Spinner</a>
           <a id="tab2" href="/components/tab">Tab</a>
           <a id="toast2" href="/components/toast">Toast</a>
-          <a id="tooltip2" href="/components/tooltip">Tooltip</a>
         </div>
       </div>
       <!-- Components list end -->
@@ -102,7 +101,6 @@
           <a id="checkbox2" href="/form/checkbox">Checkbox</a>
           <a id="file2" href="/form/file">File</a>
           <a id="input2" href="/form/input">Input</a>
-          <a id="labels2" href="/form/labels">Labels</a>
           <a id="radio2" href="/form/radio">Radio</a>
           <a id="range2" href="/form/range">Range</a>
           <a id="switches2" href="/form/switches">Switches</a>
@@ -174,14 +172,9 @@ export default {
 <style scoped>
 /* Left Navigation Start */
 .navbar {
-  width: 22vw;
-  position: fixed;
   z-index: 1;
   left: 0;
   overflow-x: hidden;
-  padding-top: 20px;
-  padding-left: 8vw;
-  padding-right: 20px;
   height: calc(100vh - 4rem);
 }
 .navbar .toggle-content a {

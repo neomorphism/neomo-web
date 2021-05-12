@@ -67,7 +67,6 @@
           <a id="spinner" href="/components/spinner">Spinner</a>
           <a id="tab" href="/components/tab">Tab</a>
           <a id="toast" href="/components/toast">Toast</a>
-          <a id="tooltip" href="/components/tooltip">Tooltip</a>
         </div>
       </div>
       <!-- Components list end -->
@@ -102,7 +101,6 @@
           <a id="checkbox" href="/form/checkbox">Checkbox</a>
           <a id="file" href="/form/file">File</a>
           <a id="input" href="/form/input">Input</a>
-          <a id="labels" href="/form/labels">Labels</a>
           <a id="radio" href="/form/radio">Radio</a>
           <a id="range" href="/form/range">Range</a>
           <a id="switches" href="/form/switches">Switches</a>
