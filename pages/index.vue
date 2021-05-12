@@ -17,10 +17,13 @@
         <p class="font-name">NEOMO</p>
         <div class="mt-10">
           <p class="font-content">
-            Neomo is a reactive framework designed to help developers develop
-            web and app designs with neomorphism.
+            <strong>NEOMO</strong> is a
+            <strong>reactive framework</strong> designed to help developers
+            develop web and app designs with <strong>neomorphism</strong>.
           </p>
-          <p class="font-content mt-5">Try using it right now.</p>
+          <p class="font-content mt-5">
+            <strong>Try using it right now.</strong>
+          </p>
         </div>
       </div>
 
@@ -100,16 +103,17 @@ export default {};
 
 /* Button Custom CSS Start */
 .content-btn--font {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .content-btn--version {
   margin: 7px 0 0 5px;
   font-size: 0.7rem;
+  font-weight: 700;
   color: grey;
 }
 .content-btn--outset {
-  width: 250px;
-  min-height: 70px;
+  width: 230px;
+  min-height: 60px;
   margin: 10px 50px 0 50px;
   color: #747373 !important;
   border-radius: 100px;
