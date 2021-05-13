@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Checkbox</h1>
+    <h1>File</h1>
     <client-only>
       <p class="bottom-border">
         File class can be useful when you upload a file.
