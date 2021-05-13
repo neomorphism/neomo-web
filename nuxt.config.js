@@ -19,9 +19,6 @@ export default {
           "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js",
       },
       {
-        src: "/neomo.js",
-      },
-      {
         src: "/site.js",
       },
       {
@@ -39,10 +36,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/neomo/src/neomo.css"],
+  css: ["@/node_modules/neomo/css/neomo.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["@/plugins/fontawesome.js"],
+  plugins: [{ src: "@/plugins/neomo.js", ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
