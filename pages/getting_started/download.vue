@@ -24,7 +24,10 @@
                     <strong class="text-strong">JS</strong>.
                   </p></client-only
                 >
-                <button class="button normal outset-neomo">
+                <button
+                  class="button normal outset-neomo"
+                  onclick="location.href='https://github.com/neomorphism/neomo/archive/refs/tags/v1.0.1.zip'"
+                >
                   <strong class="text-strong">Download</strong>
                 </button>
               </div>
@@ -33,7 +36,9 @@
               <div class="tab-content--title"><h2>CDN</h2></div>
               <div class="tab-content--text">
                 <client-only>
-                  <p></p>
+                  <p>
+                    <nuxt-content :document="cdn" />
+                  </p>
                 </client-only>
               </div>
             </li>
@@ -64,9 +69,10 @@
 export default {
   async asyncData({ $content, params }) {
     const doc = await $content(params.slug || "download/package").fetch();
-
+    const cdn = await $content(params.slug || "download/cdn").fetch();
     return {
       doc,
+      cdn,
     };
   },
 };
