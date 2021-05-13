@@ -4,8 +4,8 @@
       <!-- Logo Start-->
       <div>
         <img
-          lazy-src="mainlogo3.png"
-          src="mainlogo3.png"
+          lazy-src="mainlogo.png"
+          src="mainlogo.png"
           width="350"
           height="350"
         />
