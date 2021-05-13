@@ -1,20 +1,11 @@
-# webwebweb
+# NEOMO official site
 
-## Build Setup
+## Framework
 
-```bash
-# install dependencies
-$ yarn install
+> Github
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+https://github.com/neomorphism/neomo
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+## site url
 
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+https://neomo-ui.com
