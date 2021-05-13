@@ -3,10 +3,11 @@
     <h1>Columns</h1>
     <client-only>
       <p class="bottom-border">
-        Columns make it simple to utilize row and column grids. Columns class
-        represents one row column class represents one column. <br />
-        Used in the form of multiple columns being included as child classes in
-        a single column.
+        <strong>Columns</strong> make it simple to utilize row and column
+        <strong>grids</strong>. Columns class represents one row column class
+        represents one column. <br />
+        Used in the form of multiple columns being
+        <strong>included as child classes</strong> in a single column.
       </p>
     </client-only>
 
@@ -18,8 +19,8 @@
 
           <!-- Content-1 Basic start -->
           <div class="tab-content--text">
-            If you do not specify a size, the interior elements automatically
-            divide the width.
+            If you <strong>don't</strong> specify a size, the interior elements
+            <strong>automatically</strong> divide the width.
           </div>
           <div>
             <div class="card inset-neomo code-exam">
@@ -60,9 +61,12 @@
 
           <!-- Content-2 Size start -->
           <div class="tab-content--text">
-            <p>Users can divide up to 12 columns of space for one row.</p>
-            Options for assigning sizes for each column are size-1, size-2, ...
-            Used with size-12.
+            <p>
+              Users can divide up to <strong>12 columns</strong> of space for
+              one row.
+            </p>
+            Options for assigning sizes for each column are
+            <strong>size-1, size-2, ... Used with size-12</strong>.
           </div>
           <div>
             <div class="card inset-neomo code-exam">
@@ -151,11 +155,13 @@
           <!-- Content-3 order start -->
           <div class="tab-content--text">
             <p>
-              Users can specify order options based on the left side of the
-              display order for each column, regardless of the order in which
-              the code is written.
+              Users can specify <strong>order options</strong> based on the left
+              side of the display order for each column,
+              <strong>regardless</strong> of the order in which the
+              <strong>code</strong> is written.
             </p>
-            Order options are used as order-1, order-2, ...order-12.
+            Order options are used as
+            <strong>order-1, order-2, ...order-12.</strong>
           </div>
           <div>
             <div class="card inset-neomo code-exam">
@@ -220,8 +226,10 @@
           <div class="tab-content--title"><h2>Interval</h2></div>
 
           <div class="tab-content--text">
-            You can use interval-1, interval-2, interval-3 classes to adjust the
-            spacing of elements in each column of columns.
+            You can use
+            <strong>interval-1, interval-2, interval-3</strong> classes
+            <strong>to adjust</strong> the spacing of elements in each column of
+            columns.
           </div>
           <div>
             <div class="card inset-neomo code-exam">
@@ -283,8 +291,9 @@
           <div class="tab-content--title"><h2>Justify</h2></div>
 
           <div class="tab-content--text">
-            The just-left, just-center, and just-right options allow you to
-            adjust the left/right alignment in one row.
+            The <strong>just-left, just-center</strong>, and
+            <strong>just-right</strong> options allow you
+            <strong>to adjust</strong> the left/right alignment in one row.
           </div>
           <div>
             <div class="card inset-neomo code-exam">
@@ -348,7 +357,8 @@
           <div class="tab-content--title"><h2>Alignment</h2></div>
 
           <div class="tab-content--text">
-            Use the align-top, align-mid, and align-bottom options to adjust the
+            Use the <strong>align-top, align-mid</strong>, and
+            <strong>align-bottom</strong> options to adjust the
             top/middle/bottom alignment in one row.
           </div>
           <div>
@@ -423,10 +433,12 @@
 
           <div class="tab-content--text">
             <p>
-              By default, all rows appear reactive around 992 based on the width
+              <strong>By default</strong>, all rows appear reactive around
+              <strong>992 based on the width</strong>
               of the window.
             </p>
-            The static option allows the user to disable this responsiveness.
+            The <strong>static</strong> option allows the user
+            <strong>to disable</strong> this responsiveness.
           </div>
           <div>
             <div class="card inset-neomo code-exam">
