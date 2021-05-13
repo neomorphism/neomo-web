@@ -39,7 +39,7 @@
       <!-- Header-logo End -->
 
       <!-- Header-version Start -->
-      <div class="header-version">v1.0.0</div>
+      <div class="header-version">v1.0.1</div>
       <!-- Header-version End -->
 
       <div class="mr-2" style="display: flex">

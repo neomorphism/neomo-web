@@ -35,9 +35,12 @@
         >
           <span class="ma-0 content-btn--font">GET STARTED</span>
         </button>
-        <button class="button outset-neomo content-btn--outset">
+        <button
+          class="button outset-neomo content-btn--outset"
+          onclick="location.href='https://github.com/neomorphism/neomo/archive/refs/tags/v1.0.1.zip'"
+        >
           <span class="ma-0 content-btn--font">DOWNLOAD</span>
-          <span class="content-btn--version"> v1.0.0 </span>
+          <span class="content-btn--version"> v1.0.1 </span>
         </button>
       </div>
       <!-- Button End -->
@@ -59,7 +62,7 @@
           with the help of
           <a href="https://github.com/neomorphism/neomo">Our Contributors</a>.
 
-          <p class="mt-5">Currently v1.0.0 - beta.</p>
+          <p class="mt-5">Currently v1.0.1 - beta.</p>
           <p class="pb-10">Released under the <a>MIT License.</a></p>
         </div>
       </div>
