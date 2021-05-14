@@ -29,13 +29,12 @@
             </div>
 
             <input
-              id="myRange"
               type="range"
               min="1"
               max="100"
-              class="range-round inset-neomo"
+              class="range-round inset-neomo myRange"
             />
-            <p>Value: <span id="demo"></span></p>
+            <p>Value: <span class="demo"></span></p>
           </div>
           <!-- Content-1 Basic end -->
 
