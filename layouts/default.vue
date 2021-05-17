@@ -387,7 +387,11 @@ body {
 .header-freedemo {
   height: 43px;
   margin: 10px 1rem 0 0;
-  color: #002fff !important;
+  color: #224aff !important;
+}
+
+.header-freedemo button:hover {
+  color: blue !important;
 }
 
 .modal-menu--content {

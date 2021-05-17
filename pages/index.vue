@@ -164,6 +164,9 @@ export default {};
 .header-menu--button {
   display: none !important;
 }
+button:hover {
+  color: blue !important;
+}
 /* Left Navigation Start */
 .navbar {
   display: none;
