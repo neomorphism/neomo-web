@@ -112,13 +112,13 @@ export default {};
   margin: 7px 0 0 5px;
   font-size: 0.7rem;
   font-weight: 700;
-  color: grey;
+  color: #0063e4 !important;
 }
 .content-btn--outset {
   width: 230px;
   min-height: 60px;
   margin: 10px 50px 0 50px;
-  color: #747373 !important;
+  color: #0063e4 !important;
   border-radius: 100px;
   border: none;
 }

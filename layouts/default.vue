@@ -42,6 +42,15 @@
       <div class="header-version">v1.0.1</div>
       <!-- Header-version End -->
 
+      <!-- Free-demo Start -->
+      <button
+        class="button header-freedemo outset-neomo"
+        onclick="location.href='https://neomorphism.github.io/'"
+      >
+        <strong>FREE DEMO</strong>
+      </button>
+      <!-- Free-demo End -->
+
       <div class="mr-2" style="display: flex">
         <!-- Header-searchbar Start -->
         <input
@@ -373,6 +382,12 @@ body {
   height: 40px;
   margin: 10px 0 0 0;
   padding: 5px;
+}
+
+.header-freedemo {
+  height: 43px;
+  margin: 10px 1rem 0 0;
+  color: #002fff !important;
 }
 
 .modal-menu--content {
