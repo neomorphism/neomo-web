@@ -177,6 +177,11 @@ export default {
   },
   methods: {
     updateInput(event) {
+      event.target.addEventListener("focusout", () => {
+        document.getElementById("search-box").style.display = "none";
+        event.target.value = "";
+      });
+
       const updatedText = event.target.value;
       this.inputText = updatedText;
       if (this.inputText !== "") {
@@ -353,7 +358,7 @@ body {
 
 .header-menu--button {
   display: none;
-  min-width: 5px;
+  min-width: 40px;
   width: 40px;
   height: 40px;
   margin: 10px 0 0 0;
