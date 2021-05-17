@@ -4,11 +4,7 @@
     <!-- Getting Started list start -->
     <div class="card outset-neomo">
       <div>
-        <button
-          class="toggle-button"
-          onclick="NavbarToggle()"
-          @click="ToggleIcon"
-        >
+        <button class="toggle-button" @click="ToggleIcon">
           Getting Started
           <i class="fa fa-caret-down"></i>
         </button>
@@ -26,11 +22,7 @@
 
       <!-- Layout list start -->
       <div>
-        <button
-          class="toggle-button"
-          onclick="NavbarToggle()"
-          @click="ToggleIcon"
-        >
+        <button class="toggle-button" @click="ToggleIcon">
           Layout
           <i class="fa fa-caret-down"></i>
         </button>
@@ -42,11 +34,7 @@
 
       <!-- Components list start -->
       <div>
-        <button
-          class="toggle-button"
-          onclick="NavbarToggle()"
-          @click="ToggleIcon"
-        >
+        <button class="toggle-button" @click="ToggleIcon">
           Components
           <i class="fa fa-caret-down"></i>
         </button>
@@ -73,11 +61,7 @@
 
       <!-- Content list start -->
       <div>
-        <button
-          class="toggle-button"
-          onclick="NavbarToggle()"
-          @click="ToggleIcon"
-        >
+        <button class="toggle-button" @click="ToggleIcon">
           Content
           <i class="fa fa-caret-down"></i>
         </button>
@@ -89,11 +73,7 @@
 
       <!-- Form list start -->
       <div>
-        <button
-          class="toggle-button"
-          onclick="NavbarToggle()"
-          @click="ToggleIcon"
-        >
+        <button class="toggle-button" @click="ToggleIcon">
           Form
           <i class="fa fa-caret-down"></i>
         </button>
@@ -110,11 +90,7 @@
 
       <!-- Helpers list start -->
       <div>
-        <button
-          class="toggle-button"
-          onclick="NavbarToggle()"
-          @click="ToggleIcon"
-        >
+        <button class="toggle-button" @click="ToggleIcon">
           Helpers
           <i class="fa fa-caret-down"></i>
         </button>
@@ -138,12 +114,42 @@ export default {
       var toggle = document.getElementsByClassName("toggle-button");
       var i;
 
-      for (i = 0; i < toggle.length; i++) {
-        if (toggle[i] === event.target) {
-          if (toggle[i].childNodes[1].classList[1] === "fa-caret-down") {
-            toggle[i].childNodes[1].className = "fa fa-caret-up";
-          } else if (toggle[i].childNodes[1].classList[1] === "fa-caret-up") {
-            toggle[i].childNodes[1].className = "fa fa-caret-down";
+      if (
+        event.target.classList[1] === "fa-caret-down" ||
+        event.target.classList[1] === "fa-caret-up"
+      ) {
+        for (i = 0; i < toggle.length; i++) {
+          if (toggle[i] === event.target.parentElement) {
+            toggle[i].classList.toggle("active");
+            var toggleContent = toggle[i].nextElementSibling;
+
+            if (toggleContent.style.visibility === "visible") {
+              toggleContent.style.visibility = "hidden";
+              toggleContent.style.maxHeight = "0";
+              toggleContent.style.opacity = "0";
+            } else {
+              toggleContent.style.visibility = "visible";
+              toggleContent.style.maxHeight = "100vh";
+              toggleContent.style.opacity = "1";
+            }
+          }
+
+          if (toggle[i] === event.target.parentElement) {
+            if (toggle[i].childNodes[1].classList[1] === "fa-caret-down") {
+              toggle[i].childNodes[1].className = "fa fa-caret-up";
+            } else if (toggle[i].childNodes[1].classList[1] === "fa-caret-up") {
+              toggle[i].childNodes[1].className = "fa fa-caret-down";
+            }
+          }
+        }
+      } else {
+        for (i = 0; i < toggle.length; i++) {
+          if (toggle[i] === event.target) {
+            if (toggle[i].childNodes[1].classList[1] === "fa-caret-down") {
+              toggle[i].childNodes[1].className = "fa fa-caret-up";
+            } else if (toggle[i].childNodes[1].classList[1] === "fa-caret-up") {
+              toggle[i].childNodes[1].className = "fa fa-caret-down";
+            }
           }
         }
       }
@@ -154,7 +160,7 @@ export default {
     let pageSplit = page.split("/");
     pageSplit = pageSplit[pageSplit.length - 1] + "2";
 
-    if (pageSplit !== "" && pageSplit !== "template" && pageSplit !== "2") {
+    if (pageSplit !== "" && pageSplit !== "template2" && pageSplit !== "2") {
       let pageID = document.getElementById(pageSplit);
       let pageContent = pageID.parentElement;
       let pageButton = pageID.parentElement.parentElement.childNodes[0];
