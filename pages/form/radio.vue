@@ -16,10 +16,7 @@
           <!-- Content-1 Inset start -->
           <div class="card inset-neomo code-exam">
             <div class="mt-2 mb-3" style="display: flow-root">
-              <button
-                class="button outset-neomo button-exam"
-                onclick="ContentToggle()"
-              >
+              <button class="button outset-neomo button-exam">
                 <i class="fas fa-code collapse"></i>
               </button>
             </div>

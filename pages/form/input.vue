@@ -25,10 +25,7 @@
             <div class="tab-content--text"><h3>Square</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -50,10 +47,7 @@
             <div class="tab-content--text"><h3>Rounded</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -89,10 +83,7 @@
             <!-- Content-2 Color start -->
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -150,10 +141,7 @@
             <!-- Content-3 Disabled start -->
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -194,10 +182,7 @@
             <div class="tab-content--text"><h3>Left</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -220,10 +205,7 @@
             <div class="tab-content--text"><h3>Right</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>

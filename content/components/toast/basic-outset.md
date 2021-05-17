@@ -1,13 +1,12 @@
 ```html
-<div class="toast show outset-gray">
+<div id="Toast" class="toast show outset-neomo alert">
   <div class="toast-header">
-    <span class=""></span>
-    <strong class="mr-auto ml-2">Neumorphism</strong>
-    <small class="mr-2 ml-auto">11 mins ago</small>
-    <button type="button" onclick="toast_button(this);">
-      <span aria-hidden="true">×</span>
-    </button>
+    <strong class="font-size-5">Neomo</strong>
+    <small class="mr-2 ml-auto">12 mins ago</small>
+    <span class="toast-close">X</span>
   </div>
-  <div class="toast-body">Hello, world! This is a toast message.</div>
+  <div class="toast-body text-center">
+    Hello, world! This is a toast message.
+  </div>
 </div>
 ```

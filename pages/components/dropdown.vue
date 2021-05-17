@@ -24,10 +24,7 @@
             <div class="tab-content--text"><h3>Hover</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -56,10 +53,7 @@
             <div class="tab-content--text"><h3>Content</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -104,10 +98,7 @@
             <div class="tab-content--text"><h3>Toggle</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -117,10 +108,7 @@
               </div>
               <div style="text-align: center">
                 <div class="dropdown-toggle">
-                  <button
-                    onclick="DropdownToggle()"
-                    class="dropdown-toggle--button outset-neomo"
-                  >
+                  <button class="dropdown-toggle--button outset-neomo">
                     Toggle
                     <i class="fa fa-caret-down"></i>
                   </button>

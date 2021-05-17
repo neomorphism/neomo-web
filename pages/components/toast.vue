@@ -33,10 +33,7 @@
             <div class="tab-content--text"><h3>Outset</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -44,16 +41,17 @@
               <div class="mt-2 expanded">
                 <nuxt-content :document="basicOutset" />
               </div>
-              <div class="toast show outset-neomo" style="margin: 0 auto">
+              <div
+                id="Toast"
+                class="toast show outset-neomo alert"
+                style="margin: 0 auto"
+              >
                 <div class="toast-header">
-                  <span class=""></span>
-                  <strong class="mr-auto ml-2">Neumorphism</strong>
-                  <small class="mr-2 ml-auto">11 mins ago</small>
-                  <button type="button" onclick="toast_button(this);">
-                    <span aria-hidden="true">×</span>
-                  </button>
+                  <strong class="font-size-5">Neomo</strong>
+                  <small class="mr-2 ml-auto">12 mins ago</small>
+                  <span class="toast-close">X</span>
                 </div>
-                <div class="toast-body">
+                <div class="toast-body text-center">
                   Hello, world! This is a toast message.
                 </div>
               </div>
@@ -64,10 +62,7 @@
             <div class="tab-content--text"><h3>Inset</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -75,16 +70,17 @@
               <div class="mt-2 expanded">
                 <nuxt-content :document="basicInset" />
               </div>
-              <div class="toast show inset-neomo" style="margin: 0 auto">
+              <div
+                id="Toast"
+                class="toast show inset-neomo alert"
+                style="margin: 0 auto"
+              >
                 <div class="toast-header">
-                  <span class=""></span>
-                  <strong class="mr-auto ml-2">Neumorphism</strong>
-                  <small class="mr-2 ml-auto">11 mins ago</small>
-                  <button type="button" onclick="toast_button(this);">
-                    <span aria-hidden="true">×</span>
-                  </button>
+                  <strong class="font-size-5">Neomo</strong>
+                  <small class="mr-2 ml-auto">12 mins ago</small>
+                  <span class="toast-close">X</span>
                 </div>
-                <div class="toast-body">
+                <div class="toast-body text-center">
                   Hello, world! This is a toast message.
                 </div>
               </div>

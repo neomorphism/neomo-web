@@ -5,42 +5,38 @@
       <p class="bottom-border">You can use a template that is already made!</p>
     </client-only>
 
-    <div class="columns">
-      <div class="column">
+    <div class="columns text-center">
+      <div class="column card outset-neomo m-1">
         <div>
-          <a href="#">
-            <img
-              src="https://onepagelove.imgix.net/2020/01/opl-master-15-04-23-435.jpg?w=360&max-h=480&fit=crop&fp-y=0&auto=compress"
-              style="width: 360px; height: 480px"
-            />
+          <a href="https://neomorphism.github.io/">
+            <img src="~static/template1.png" />
           </a>
         </div>
-        <div>
+        <div class="pb-2" style="background-color: white">
+          <p>Template1</p>
           <button
             class="button outset-neomo content-btn--outset"
-            onclick="location.href='#'"
+            onclick="location.href='https://neomorphism.github.io/'"
           >
             <span class="ma-0 content-btn--font">Preview</span>
           </button>
           <button
             class="button outset-neomo content-btn--outset"
-            onclick="location.href='#'"
+            onclick="location.href='https://github.com/neomorphism/neomorphism.github.io/archive/refs/heads/main.zip'"
           >
             <span class="ma-0 content-btn--font">Download</span>
           </button>
         </div>
       </div>
 
-      <div class="column">
+      <div class="column card outset-neomo m-1">
         <div>
           <a href="#">
-            <img
-              src="https://onepagelove.imgix.net/2020/01/opl-master-15-04-23-435.jpg?w=360&max-h=480&fit=crop&fp-y=0&auto=compress"
-              style="width: 360px; height: 480px"
-            />
+            <img src="~static/template1.png" />
           </a>
         </div>
-        <div>
+        <div class="pb-2" style="background-color: white">
+          <p>Template2</p>
           <button
             class="button outset-neomo content-btn--outset"
             onclick="location.href='#'"
@@ -65,10 +61,10 @@ export default {};
 
 <style scope>
 .content-btn--outset {
-  width: 150px;
+  align-items: center;
+  width: 100px;
   min-height: 70px;
-  margin: 10px 50px 0 0;
-  color: #747373 !important;
+  margin: 10px 10px 0 10px;
   border: none;
 }
 </style>

@@ -21,10 +21,7 @@
           <!-- Content-1 Basic start -->
           <div class="card inset-neomo code-exam">
             <div class="mt-2 mb-3" style="display: flow-root">
-              <button
-                class="button outset-neomo button-exam"
-                onclick="ContentToggle()"
-              >
+              <button class="button outset-neomo button-exam">
                 <i class="fas fa-code collapse"></i>
               </button>
             </div>
@@ -34,9 +31,7 @@
             </div>
             <div class="navbar" style="margin: 0 auto">
               <div>
-                <button class="toggle-button" onclick="NavbarToggle()">
-                  List1
-                </button>
+                <button class="toggle-button">List1</button>
                 <div class="toggle-content">
                   <a href="#">Link1</a>
                   <a href="#">Link2</a>
@@ -45,9 +40,7 @@
               </div>
 
               <div>
-                <button class="toggle-button" onclick="NavbarToggle()">
-                  List2
-                </button>
+                <button class="toggle-button">List2</button>
                 <div class="toggle-content">
                   <a href="#">Link1</a>
                   <a href="#">Link2</a>
@@ -56,9 +49,7 @@
               </div>
 
               <div>
-                <button class="toggle-button" onclick="NavbarToggle()">
-                  List3
-                </button>
+                <button class="toggle-button">List3</button>
                 <div class="toggle-content">
                   <a href="#">Link1</a>
                   <a href="#">Link2</a>

@@ -1,9 +1,6 @@
 ```html
 <div class="dropdown-toggle">
-  <button
-    onclick="DropdownToggle()"
-    class="dropdown-toggle--button outset-neomo"
-  >
+  <button class="dropdown-toggle--button outset-neomo">
     Toggle
     <i class="fa fa-caret-down"></i>
   </button>

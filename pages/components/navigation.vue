@@ -28,10 +28,7 @@
             <div class="tab-content--text"><h3>With &lt;li&gt; Tag</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -54,10 +51,7 @@
             <div class="tab-content--text"><h3>Without &lt;li&gt; Tag</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -88,10 +82,7 @@
             <!-- Content-2 Animation start -->
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -123,10 +114,7 @@
             <div class="tab-content--text"><h3>Vertical</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button
-                  class="button outset-neomo button-exam"
-                  onclick="ContentToggle()"
-                >
+                <button class="button outset-neomo button-exam">
                   <i class="fas fa-code collapse"></i>
                 </button>
               </div>
@@ -149,7 +137,7 @@
 
       <!-- Tab List start -->
       <ul class="tab-list tab-right">
-        <li><a class="current" id="tab-1">Basic</a></li>
+        <li><a id="tab-1" class="current">Basic</a></li>
         <li><a id="tab-2">Animation</a></li>
         <li style="margin-right: 0"><a id="tab-3">Vertical</a></li>
       </ul>
