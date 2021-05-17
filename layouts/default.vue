@@ -594,6 +594,9 @@ pre .modal-content--sm span {
 .neomo .tab ul.tab-list li a.current {
   color: rgb(6, 93, 255);
 }
+.neomo .tab ul.tab-list li a:hover {
+  color: rgb(6, 93, 255);
+}
 
 @media screen and (max-width: 1430px) {
   .content-nav {
