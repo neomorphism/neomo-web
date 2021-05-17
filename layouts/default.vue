@@ -186,10 +186,6 @@ export default {
   },
   methods: {
     updateInput(event) {
-      /*event.target.addEventListener("focusout", () => {
-        document.getElementById("search-box").style.display = "none";
-        event.target.value = "";
-      });*/
       const updatedText = event.target.value;
       this.inputText = updatedText;
       if (this.inputText !== "") {
@@ -292,16 +288,14 @@ export default {
   },
   mounted() {
     copyToClipboard();
-    document.addEventListener("DOMContentLoaded", function () {
-      window.onclick = function (event) {
-        if (
-          !event.target.closest("#search-box") &&
-          !event.target.matches(".header-searchbar")
-        ) {
-          document.getElementById("search-box").style.display = "none";
-          document.getElementsByClassName("header-searchbar")[0].value = "";
-        }
-      };
+    window.addEventListener("click", function (event) {
+      if (
+        !event.target.closest("#search-box") &&
+        !event.target.matches(".header-searchbar")
+      ) {
+        document.getElementById("search-box").style.display = "none";
+        document.getElementsByClassName("header-searchbar")[0].value = "";
+      }
     });
   },
 };
