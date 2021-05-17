@@ -385,8 +385,8 @@ body {
 }
 
 .header-freedemo {
-  height: 43px;
-  margin: 10px 1rem 0 0;
+  height: 43px !important;
+  margin: 10px 1rem 0 0 !important;
   color: #224aff !important;
 }
 
@@ -587,6 +587,12 @@ pre .modal-content--sm span {
   float: right;
   padding: 0;
   border-radius: 100%;
+}
+.neomo .tab ul.tab-list li {
+  margin-bottom: 2rem;
+}
+.neomo .tab ul.tab-list li a.current {
+  color: rgb(6, 93, 255);
 }
 
 @media screen and (max-width: 1430px) {
