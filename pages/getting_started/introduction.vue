@@ -7,7 +7,7 @@
         <strong class="text-strong">UI framework</strong> for
         <strong class="text-strong">neomorphism</strong> design. <br /><a
           href="/"
-          >v1.0.1 Docs</a
+          >v1.0.2 Docs</a
         >
         kindly provide you with the usage and example code.
       </p>
