@@ -1,6 +1,16 @@
 <template>
   <div class="neomo">
     <div class="main-body">
+      <iframe
+        width="70%"
+        height="749"
+        class="content-video"
+        src="https://www.youtube.com/embed/rST1gd_9Zl4?&autoplay=1&loop=1&&playlist=rST1gd_9Zl4"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
       <!-- Logo Start-->
       <div>
         <img
@@ -129,6 +139,9 @@ export default {};
   border: none;
   background: var(--neomo);
   box-shadow: inset 5px 5px 9px #cad3da, inset -5px -5px 9px #ebf1f5 !important;
+}
+.content-video {
+  margin: 0 0 3rem 0;
 }
 
 /* Footer CSS Start */
