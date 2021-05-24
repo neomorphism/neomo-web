@@ -45,9 +45,9 @@
       <!-- Free-demo Start -->
       <button
         class="button header-freedemo outset-neomo"
-        onclick="location.href='https://neomorphism.github.io/'"
+        onclick="window.open('https://neomorphism.github.io/')"
       >
-        <strong>FREE DEMO</strong>
+        <strong>UI Sample</strong>
       </button>
       <!-- Free-demo End -->
 
