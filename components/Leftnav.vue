@@ -202,4 +202,8 @@ export default {
 .card {
   padding: 10px;
 }
+
+button.toggle-button.active {
+  color: rgb(78, 108, 245) !important;
+}
 </style>
