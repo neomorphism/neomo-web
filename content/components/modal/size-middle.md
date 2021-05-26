@@ -1,6 +1,6 @@
 ```html
-<button class="modal-button outset-neomo">Middle Card MODAL</button>
-<div class="modal">
+<button data-modal-id="modal2" class="modal-button outset-neomo">Middle Card MODAL</button>
+<div data-modal-id="modal2" class="modal">
   <div class="modal-content--md outset-neomo">
     <span class="modal-close">&times;</span>
     <header class="card-header">

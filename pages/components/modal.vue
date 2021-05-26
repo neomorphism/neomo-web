@@ -30,8 +30,10 @@
               <div class="mt-2 expanded">
                 <nuxt-content :document="basic" />
               </div>
-              <button class="modal-button outset-neomo">MODAL Button</button>
-              <div class="modal">
+              <button data-modal-id="modal1" class="modal-button outset-neomo">
+                MODAL Button
+              </button>
+              <div data-modal-id="modal1" class="modal">
                 <div class="modal-content--md outset-neomo">
                   <span class="modal-close">&times;</span>
                   <p>
@@ -70,10 +72,10 @@
               <div class="mt-2 expanded">
                 <nuxt-content :document="sizeSmall" />
               </div>
-              <button class="modal-button outset-neomo">
+              <button data-modal-id="modal2" class="modal-button outset-neomo">
                 Small Card MODAL
               </button>
-              <div class="modal">
+              <div data-modal-id="modal2" class="modal">
                 <div class="modal-content--sm outset-neomo">
                   <span class="modal-close">&times;</span>
                   <header class="card-header">
@@ -135,10 +137,10 @@
               <div class="mt-2 expanded">
                 <nuxt-content :document="sizeMiddle" />
               </div>
-              <button class="modal-button outset-neomo">
+              <button data-modal-id="modal3" class="modal-button outset-neomo">
                 Middle Card MODAL
               </button>
-              <div class="modal">
+              <div data-modal-id="modal3" class="modal">
                 <div class="modal-content--md outset-neomo">
                   <span class="modal-close">&times;</span>
                   <header class="card-header">
