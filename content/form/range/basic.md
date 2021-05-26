@@ -1,4 +1,10 @@
 ```html
-<input type="range" min="1" max="100" class="range-round inset-neomo myRange" />
-<p>Value: <span class="demo"></span></p>
+<input
+  data-range-id="range"
+  type="range"
+  min="0"
+  max="100"
+  class="range-round inset-neomo myRange"
+/>
+<p>Value: <span data-range-id="range" class="demo"></span></p>
 ```
