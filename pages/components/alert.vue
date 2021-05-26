@@ -114,35 +114,35 @@
                 <nuxt-content :document="dismissing" />
               </div>
 
-              <div id="Alt" class="outset-neomo alert">
+              <div class="outset-neomo alert" role="alert">
                 <span
                   ><strong>Well done!</strong> You successfully read this
                   important alert message.</span
                 >
                 <span class="alt-close">X</span>
               </div>
-              <div id="Alt" class="outset-neomo alert info">
+              <div class="outset-neomo alert info" role="alert">
                 <span
                   ><strong>Well done!</strong> You successfully read this
                   important alert message.</span
                 >
                 <span class="alt-close">X</span>
               </div>
-              <div id="Alt" class="outset-neomo alert success">
+              <div class="outset-neomo alert success" role="alert">
                 <span
                   ><strong>Well done!</strong> You successfully read this
                   important alert message.</span
                 >
                 <span class="alt-close">X</span>
               </div>
-              <div id="Alt" class="outset-neomo alert danger">
+              <div class="outset-neomo alert danger" role="alert">
                 <span
                   ><strong>Well done!</strong> You successfully read this
                   important alert message.</span
                 >
                 <span class="alt-close">X</span>
               </div>
-              <div id="Alt" class="outset-neomo alert warning">
+              <div class="outset-neomo alert warning" role="alert">
                 <span
                   ><strong>Well done!</strong> You successfully read this
                   important alert message.</span
