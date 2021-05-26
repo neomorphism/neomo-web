@@ -4,12 +4,17 @@
     <header class="header neomo">
       <!-- Header-menu Start -->
       <button
+        data-modal-id="header-modal"
         class="modal-button outset-neomo header-menu--button"
         style="cursor: pointer"
       >
         <i class="fas fa-bars"></i>
       </button>
-      <div class="modal" style="overflow-y: hidden">
+      <div
+        data-modal-id="header-modal"
+        class="modal"
+        style="overflow-y: hidden"
+      >
         <div class="modal-content--sm outset-neomo modal-menu--content">
           <span class="modal-close">&times;</span>
           <div id="main-leftnav--hidden" class="container content-nav--hidden">
