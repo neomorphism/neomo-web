@@ -1,5 +1,5 @@
 ```html
-<div id="Toast" class="toast show outset-neomo">
+<div class="toast show outset-neomo">
   <div class="toast-header">
     <strong class="font-size-5">Neomo</strong>
     <small class="mr-2 ml-auto">12 mins ago</small>

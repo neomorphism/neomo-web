@@ -44,11 +44,7 @@
               <div data-collapse-id="collapse1" class="mt-2 expanded">
                 <nuxt-content :document="basicOutset" />
               </div>
-              <div
-                id="Toast"
-                class="toast show outset-neomo"
-                style="margin: 0 auto"
-              >
+              <div class="toast show outset-neomo" style="margin: 0 auto">
                 <div class="toast-header">
                   <strong class="font-size-5">Neomo</strong>
                   <small class="mr-2 ml-auto">12 mins ago</small>
@@ -76,11 +72,7 @@
               <div data-collapse-id="collapse2" class="mt-2 expanded">
                 <nuxt-content :document="basicInset" />
               </div>
-              <div
-                id="Toast"
-                class="toast show inset-neomo"
-                style="margin: 0 auto"
-              >
+              <div class="toast show inset-neomo" style="margin: 0 auto">
                 <div class="toast-header">
                   <strong class="font-size-5">Neomo</strong>
                   <small class="mr-2 ml-auto">12 mins ago</small>

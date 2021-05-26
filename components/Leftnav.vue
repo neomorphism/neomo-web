@@ -157,19 +157,21 @@ export default {
   },
   mounted() {
     let page = location.href;
-    let pageSplit = page.split("/");
-    pageSplit = pageSplit[pageSplit.length - 1];
+    if (location.href !== "https://neomo-ui.com/") {
+      let pageSplit = page.split("/");
+      pageSplit = pageSplit[pageSplit.length - 1];
 
-    if (pageSplit !== "" && pageSplit !== "template") {
-      let pageID = document.getElementById(pageSplit);
-      let pageContent = pageID.parentElement;
-      let pageButton = pageID.parentElement.parentElement.childNodes[0];
-      pageButton.childNodes[1].className = "fa fa-caret-up";
-      pageButton.classList.toggle("active");
-      pageContent.style.visibility = "visible";
-      pageContent.style.maxHeight = "100vh";
-      pageContent.style.opacity = "1";
-      pageID.style.color = "rgb(48, 84, 241)";
+      if (pageSplit !== "" && pageSplit !== "template") {
+        let pageID = document.getElementById(pageSplit);
+        let pageContent = pageID.parentElement;
+        let pageButton = pageID.parentElement.parentElement.childNodes[0];
+        pageButton.childNodes[1].className = "fa fa-caret-up";
+        pageButton.classList.toggle("active");
+        pageContent.style.visibility = "visible";
+        pageContent.style.maxHeight = "100vh";
+        pageContent.style.opacity = "1";
+        pageID.style.color = "rgb(48, 84, 241)";
+      }
     }
   },
 };
