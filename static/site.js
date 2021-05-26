@@ -1,13 +1,16 @@
 /* eslint-disable */
 function copyToClipboard() {
-  var pre = document.querySelectorAll("pre");
+  let count = 0;
+  const pre = document.querySelectorAll("pre");
   pre.forEach((snippet) => {
     let button = document.createElement("button");
     let modalContent = document.createElement("div");
 
     button.className = "copy-btn";
     button.classList.add("modal-button");
+    button.setAttribute("data-modal-id", "copyModal" + count);
     modalContent.className = "modal";
+    modalContent.setAttribute("data-modal-id", "copyModal" + count);
 
     button.innerHTML = "<i class='far fa-copy fa-2x'></i>";
     modalContent.innerHTML = `<div class='modal-content--sm outset-neomo'> 
@@ -16,6 +19,7 @@ function copyToClipboard() {
                               </div>`;
     snippet.appendChild(button);
     snippet.appendChild(modalContent);
+    count += 1;
   });
   let copyCode = new ClipboardJS(".copy-btn", {
     target: function (trigger) {
