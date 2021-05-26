@@ -22,12 +22,15 @@
             <!-- Content-1 Basic start -->
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button class="button outset-neomo button-exam">
-                  <i class="fas fa-code collapse"></i>
+                <button
+                  data-collapse-id="collapse1"
+                  class="button outset-neomo button-exam collapse"
+                >
+                  <i class="fas fa-code"></i>
                 </button>
               </div>
 
-              <div class="mt-2 expanded">
+              <div data-collapse-id="collapse1" class="mt-2 expanded">
                 <nuxt-content :document="basic" />
               </div>
               <button data-modal-id="modal1" class="modal-button outset-neomo">
@@ -64,12 +67,15 @@
             <div class="tab-content--text"><h3>Small</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button class="button outset-neomo button-exam">
-                  <i class="fas fa-code collapse"></i>
+                <button
+                  data-collapse-id="collapse2"
+                  class="button outset-neomo button-exam collapse"
+                >
+                  <i class="fas fa-code"></i>
                 </button>
               </div>
 
-              <div class="mt-2 expanded">
+              <div data-collapse-id="collapse2" class="mt-2 expanded">
                 <nuxt-content :document="sizeSmall" />
               </div>
               <button data-modal-id="modal2" class="modal-button outset-neomo">
@@ -129,12 +135,15 @@
             <div class="tab-content--text"><h3>Middle</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button class="button outset-neomo button-exam">
-                  <i class="fas fa-code collapse"></i>
+                <button
+                  data-collapse-id="collapse3"
+                  class="button outset-neomo button-exam collapse"
+                >
+                  <i class="fas fa-code"></i>
                 </button>
               </div>
 
-              <div class="mt-2 expanded">
+              <div data-collapse-id="collapse3" class="mt-2 expanded">
                 <nuxt-content :document="sizeMiddle" />
               </div>
               <button data-modal-id="modal3" class="modal-button outset-neomo">

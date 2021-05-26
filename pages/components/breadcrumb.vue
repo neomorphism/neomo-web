@@ -28,12 +28,15 @@
             <div class="tab-content--text"><h3>Outset</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button class="button outset-neomo button-exam">
-                  <i class="fas fa-code collapse"></i>
+                <button
+                  data-collapse-id="collapse1"
+                  class="button outset-neomo button-exam collapse"
+                >
+                  <i class="fas fa-code"></i>
                 </button>
               </div>
 
-              <div class="mt-2 expanded">
+              <div data-collapse-id="collapse1" class="mt-2 expanded">
                 <nuxt-content :document="basicOutset" />
               </div>
               <nav class="breadcrumb outset-neomo p-1">
@@ -67,12 +70,15 @@
             <div class="tab-content--text"><h3>Inset</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button class="button outset-neomo button-exam">
-                  <i class="fas fa-code collapse"></i>
+                <button
+                  data-collapse-id="collapse2"
+                  class="button outset-neomo button-exam collapse"
+                >
+                  <i class="fas fa-code"></i>
                 </button>
               </div>
 
-              <div class="mt-2 expanded">
+              <div data-collapse-id="collapse2" class="mt-2 expanded">
                 <nuxt-content :document="basicInset" />
               </div>
               <nav class="breadcrumb inset-neomo p-1">
@@ -121,12 +127,15 @@
             <div class="tab-content--text"><h3>Centered</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button class="button outset-neomo button-exam">
-                  <i class="fas fa-code collapse"></i>
+                <button
+                  data-collapse-id="collapse3"
+                  class="button outset-neomo button-exam collapse"
+                >
+                  <i class="fas fa-code"></i>
                 </button>
               </div>
 
-              <div class="mt-2 expanded">
+              <div data-collapse-id="collapse3" class="mt-2 expanded">
                 <nuxt-content :document="justifyCentered" />
               </div>
               <nav
@@ -187,12 +196,15 @@
             <div class="tab-content--text"><h3>Right</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button class="button outset-neomo button-exam">
-                  <i class="fas fa-code collapse"></i>
+                <button
+                  data-collapse-id="collapse4"
+                  class="button outset-neomo button-exam collapse"
+                >
+                  <i class="fas fa-code"></i>
                 </button>
               </div>
 
-              <div class="mt-2 expanded">
+              <div data-collapse-id="collapse4" class="mt-2 expanded">
                 <nuxt-content :document="justifyRight" />
               </div>
               <nav
@@ -269,12 +281,15 @@
             <div class="tab-content--text"><h3>Direction</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button class="button outset-neomo button-exam">
-                  <i class="fas fa-code collapse"></i>
+                <button
+                  data-collapse-id="collapse5"
+                  class="button outset-neomo button-exam collapse"
+                >
+                  <i class="fas fa-code"></i>
                 </button>
               </div>
 
-              <div class="mt-2 expanded">
+              <div data-collapse-id="collapse5" class="mt-2 expanded">
                 <nuxt-content :document="separatorDirection" />
               </div>
               <nav
@@ -335,12 +350,15 @@
             <div class="tab-content--text"><h3>Aroow</h3></div>
             <div class="card inset-neomo code-exam">
               <div class="mt-2 mb-3" style="display: flow-root">
-                <button class="button outset-neomo button-exam">
-                  <i class="fas fa-code collapse"></i>
+                <button
+                  data-collapse-id="collapse6"
+                  class="button outset-neomo button-exam collapse"
+                >
+                  <i class="fas fa-code"></i>
                 </button>
               </div>
 
-              <div class="mt-2 expanded">
+              <div data-collapse-id="collapse6" class="mt-2 expanded">
                 <nuxt-content :document="separatorAllow" />
               </div>
               <nav

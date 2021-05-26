@@ -1,7 +1,4 @@
 ```html
-<div class="mt-2 expanded">
-  <nuxt-content :document="basicOutset" />
-</div>
 <span>success</span>
 <div class="progress outset-neomo">
   <div class="progress-bar success width-3"></div>
