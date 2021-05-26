@@ -46,7 +46,7 @@
               </div>
               <div
                 id="Toast"
-                class="toast show outset-neomo alert"
+                class="toast show outset-neomo"
                 style="margin: 0 auto"
               >
                 <div class="toast-header">
@@ -78,7 +78,7 @@
               </div>
               <div
                 id="Toast"
-                class="toast show inset-neomo alert"
+                class="toast show inset-neomo"
                 style="margin: 0 auto"
               >
                 <div class="toast-header">
