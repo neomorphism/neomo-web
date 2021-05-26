@@ -328,4 +328,21 @@ export default {
 .tab-right {
   float: right;
 }
+.neomo .tab1 ul.tab-list1 li a {
+  border: none;
+  background: var(--neomo) !important;
+  box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #3a72d349 !important;
+  color: var(--neomo-blue-text);
+}
+.neomo .tab1 ul.tab-list1 li {
+  margin-bottom: 2rem;
+}
+.neomo .tab1 ul.tab-list1 li a.current1,
+.neomo .tab1 ul.tab-list1 li a:hover {
+  color: rgb(6, 93, 255);
+  border: none;
+  background: var(--neomo) !important;
+  box-shadow: inset -3px -3px 7px #ffffffe5,
+    inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important;
+}
 </style>

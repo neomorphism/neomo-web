@@ -534,6 +534,7 @@ pre .copy-btn i {
 }
 .copy-btn {
   padding: 10px;
+  cursor: pointer;
   border: none;
   border-radius: 100%;
   width: 3rem;
