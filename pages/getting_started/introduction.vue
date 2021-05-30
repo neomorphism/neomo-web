@@ -7,7 +7,7 @@
         <strong class="text-strong">UI framework</strong> for
         <strong class="text-strong">neomorphism</strong> design. <br /><a
           href="/"
-          >v2.0.0 Docs</a
+          >v2.0.1 Docs</a
         >
         kindly provide you with the usage and example code.
       </p>
@@ -60,7 +60,7 @@
               </div>
             </li>
             <li id="content-3" class="tab-content--list">
-              <div class="tab-content--title"><h2>Contribute</h2></div>
+              <div class="tab-content--title"><h2>Community</h2></div>
               <div class="tab-content--text">
                 <client-only>
                   <p>
@@ -70,29 +70,17 @@
                     <strong class="text-strong">contribute</strong> to NEOMO.
                   </p></client-only
                 >
-                <ul>
+                <ul class="commu-list">
                   <li>
                     <a href="https://github.com/neomorphism/neomo/issues"
                       >Github</a
                     >
                   </li>
                   <li>
-                    <a
-                      href="https://github.com/neomorphism/neomo/blob/main/LICENSE"
-                      >Instagram</a
-                    >
+                    <a href="https://www.instagram.com/neomoui/">Instagram</a>
                   </li>
                   <li>
-                    <a
-                      href="https://github.com/neomorphism/neomo/blob/main/LICENSE"
-                      >Facebook</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/neomorphism/neomo/blob/main/LICENSE"
-                      >Email</a
-                    >
+                    <a href="https://www.facebook.com/neomoui">Facebook</a>
                   </li>
                 </ul>
               </div>
@@ -101,7 +89,7 @@
           <ul class="tab-list tab-right">
             <li><a id="tab-1" class="current">NEOMO?</a></li>
             <li><a id="tab-2">License</a></li>
-            <li><a id="tab-3">Contribute</a></li>
+            <li><a id="tab-3">Community</a></li>
           </ul>
         </div>
       </div>
@@ -112,5 +100,8 @@
 <style>
 a {
   color: rgb(32, 133, 216);
+}
+.commu-list li {
+  margin-top: 7px;
 }
 </style>
