@@ -44,17 +44,8 @@
       <!-- Header-logo End -->
 
       <!-- Header-version Start -->
-      <div class="header-version">v2.0.0</div>
+      <div class="header-version">v2.0.1</div>
       <!-- Header-version End -->
-
-      <!-- Free-demo Start -->
-      <button
-        class="button header-freedemo outset-neomo"
-        onclick="window.open('https://neomorphism.github.io/')"
-      >
-        <strong>UI Sample</strong>
-      </button>
-      <!-- Free-demo End -->
 
       <div class="mr-2" style="display: flex">
         <!-- Header-searchbar Start -->
@@ -517,6 +508,9 @@ h2 {
   padding: 0;
   color: rgb(95, 95, 95);
   font-weight: bold;
+}
+.content-tab--only {
+  display: none !important;
 }
 .nuxt-content pre {
   margin: 0;
