@@ -65,7 +65,7 @@
 
       <!-- Tab List start -->
       <ul class="tab-list tab-right">
-        <li><a id="tab-1" class="current">Color</a></li>
+        <li><a id="tab-1" class="current content-tab--only">Color</a></li>
       </ul>
       <!-- Tab List end -->
     </div>

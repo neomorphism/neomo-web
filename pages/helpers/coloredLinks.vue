@@ -60,7 +60,7 @@
 
       <!-- Tab List start -->
       <ul class="tab-list tab-right">
-        <li><a id="tab-1" class="current">Link</a></li>
+        <li><a id="tab-1" class="current content-tab--only">Link</a></li>
       </ul>
       <!-- Tab List end -->
     </div>

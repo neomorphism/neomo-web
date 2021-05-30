@@ -40,7 +40,7 @@
                   >this is radio. 'option1'</label
                 >
               </div>
-              <div>
+              <div class="m-1">
                 <input
                   id="radio4"
                   class="radio-input inset-neomo"
@@ -62,7 +62,7 @@
 
       <!-- Tab List start -->
       <ul class="tab-list tab-right">
-        <li><a id="tab-1" href="#" class="current">Basic</a></li>
+        <li><a id="tab-1" class="current content-tab--only">Basic</a></li>
       </ul>
       <!-- Tab List end -->
     </div>
