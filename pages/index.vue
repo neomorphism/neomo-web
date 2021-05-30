@@ -47,10 +47,10 @@
         </button>
         <button
           class="button outset-neomo content-btn--outset"
-          onclick="location.href='https://github.com/neomorphism/neomo/archive/refs/tags/v2.0.0.zip'"
+          onclick="location.href='https://github.com/neomorphism/neomo/archive/refs/tags/v2.0.1.zip'"
         >
           <span class="ma-0 content-btn--font">DOWNLOAD</span>
-          <span class="content-btn--version"> v2.0.0 </span>
+          <span class="content-btn--version"> v2.0.1 </span>
         </button>
       </div>
       <!-- Button End -->
@@ -62,8 +62,12 @@
           <a href="https://github.com/neomorphism/neomo">
             <i class="fab fa-github fa-2x"></i>
           </a>
-          <a href="/"><i class="fab fa-facebook fa-2x ml-10 mr-10"></i></a>
-          <a href="/"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.facebook.com/neomoui"
+            ><i class="fab fa-facebook fa-2x ml-10 mr-10"></i
+          ></a>
+          <a href="https://www.instagram.com/neomoui/"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
         </div>
 
         <div class="mb-0 footer-font">
@@ -72,7 +76,7 @@
           with the help of
           <a href="https://github.com/neomorphism/neomo">Our Contributors</a>.
 
-          <p class="mt-5">Currently v2.0.0.</p>
+          <p class="mt-5">Currently v2.0.1.</p>
           <p class="pb-10">Released under the <a>MIT License.</a></p>
         </div>
       </div>
