@@ -10,7 +10,7 @@
     </client-only>
 
     <div class="tab">
-      <ul class="tab-content color-neomo">
+      <ul class="tab-content outset-neomo">
         <!-- Content-1 Start -->
         <li id="content-1" class="tab-content--list">
           <div class="tab-content--title"><h2>Border-color</h2></div>
