@@ -47,7 +47,7 @@
       <div class="header-version">v2.0.1</div>
       <!-- Header-version End -->
 
-      <div class="mr-2" style="display: flex">
+      <div class="mr-2" style="display: flex; position: relative">
         <!-- Header-searchbar Start -->
         <input
           class="input header-searchbar inset-neomo"
@@ -407,6 +407,7 @@ body {
   top: 66px;
   padding: 8px;
   width: 300px;
+  right: 10px;
 }
 
 #search-start,
