@@ -99,9 +99,15 @@
           <a id="typography2" href="/helpers/typography">Typography</a>
         </div>
       </div>
+      <!-- Helpers list end -->
+
+      <!-- Template start -->
+      <div class="template">
+        <a class="template-link" href="/template">Template</a>
+      </div>
+      <!-- Template end -->
     </div>
   </div>
-  <!-- Helpers list end -->
 
   <!-- Left Navigation End-->
 </template>
@@ -202,5 +208,19 @@ export default {
 .modal {
   width: 100vw;
   z-index: 1;
+}
+
+.template {
+  margin: 5px 0 0 0;
+  padding: 6px 8px 6px 16px;
+  border-top: thin solid rgba(0, 0, 0, 0.07);
+}
+.template-link {
+  color: #818181;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.template-link:hover {
+  color: rgb(78, 108, 245) !important;
 }
 </style>
