@@ -85,11 +85,29 @@
                 </ul>
               </div>
             </li>
+            <li id="content-4" class="tab-content--list">
+              <div class="tab-content--title"><h2>Preview</h2></div>
+              <div class="tab-content--text">
+                <client-only>
+                  <p>
+                    You can see
+                    <strong class="text-strong">all components</strong> at once!
+                  </p></client-only
+                >
+                <button
+                  class="button outset-neomo normal header-freedemo"
+                  onclick="window.open('https://neomorphism.github.io/')"
+                >
+                  <strong>Preview</strong>
+                </button>
+              </div>
+            </li>
           </ul>
           <ul class="tab-list tab-right">
             <li><a id="tab-1" class="current">NEOMO?</a></li>
             <li><a id="tab-2">License</a></li>
             <li><a id="tab-3">Community</a></li>
+            <li><a id="tab-4">Preview</a></li>
           </ul>
         </div>
       </div>
