@@ -1,15 +1,21 @@
 <template>
   <div class="neomo">
+    <!-- Video-Start -->
     <div class="main-body">
-      <iframe
-        width="70%"
-        height="749"
-        class="content-video"
-        src="https://www.youtube.com/embed/rST1gd_9Zl4?&autoplay=1&loop=1&&playlist=rST1gd_9Zl4"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div style="width: 70vw; margin: auto">
+        <div class="video-wrap">
+          <iframe
+            id="video"
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/rST1gd_9Zl4?&autoplay=1&loop=1&&playlist=rST1gd_9Zl4"
+            frameborder="0"
+            allow="encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <!-- Video-End -->
 
       <!-- Logo Start-->
       <div>
@@ -109,7 +115,7 @@ export default {};
 }
 .font-name {
   font-weight: 900;
-  font-size: 6rem;
+  font-size: 5rem;
   margin-top: 5px;
   margin-bottom: 0;
 }
@@ -178,12 +184,14 @@ export default {};
   width: 100vw;
   padding: 0;
 }
-.header-menu--button {
-  display: none !important;
-}
 button:hover {
   color: blue !important;
 }
+
+.header-menu--button {
+  display: none !important;
+}
+
 /* Left Navigation Start */
 .navbar {
   display: none;
@@ -192,5 +200,31 @@ button:hover {
 /* Lightbar Start */
 .right-bar {
   display: none;
+}
+
+/* Video Start */
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.video-wrap iframe,
+.video-wrap object,
+.video-wrap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    width: 90vw;
+    margin: auto;
+  }
 }
 </style>
