@@ -628,18 +628,53 @@ pre .modal-content--sm span {
   .header-searchbar {
     width: 50vw;
   }
-  .code-exam {
-    padding: 2rem;
-  }
-  .main {
-    padding: 1rem;
-  }
   #search-box {
     width: 50vw;
     margin: auto;
   }
   p {
     font-size: 0.8rem;
+  }
+
+  .tab {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .tab-content {
+    box-shadow: none !important;
+  }
+  .tab ul.tab-content {
+    width: 95vw;
+    padding: 0;
+  }
+  .tab ul.tab-content li.tab-content--list,
+  .main {
+    padding: 0;
+  }
+  .code-exam {
+    padding: 10px 20px 40px 20px;
+  }
+  .neomo .tab ul.tab-list li {
+    margin-bottom: 1rem;
+  }
+  .tab ul.tab-right li {
+    margin: 5px;
+  }
+  .badge {
+    display: inline-block;
+  }
+  .breadcrumb {
+    overflow-x: scroll;
+  }
+  .breadcrumb ul {
+    padding: 5px;
+  }
+  .card {
+    overflow-x: scroll;
+  }
+  .card-margin {
+    margin: 0;
   }
 }
 

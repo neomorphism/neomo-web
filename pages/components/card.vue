@@ -43,7 +43,7 @@
             <div data-collapse-id="collapse1" class="mt-2 expanded">
               <nuxt-content :document="basicOutset" />
             </div>
-            <div class="column size-11 text-center ml-10">
+            <div class="column size-11 text-center ml-10 card-margin">
               <div class="card outset-neomo">
                 <div class="card-image">
                   <img
@@ -98,7 +98,7 @@
             <div data-collapse-id="collapse2" class="mt-2 expanded">
               <nuxt-content :document="basicInset" />
             </div>
-            <div class="column size-11 text-center ml-10">
+            <div class="column size-11 text-center ml-10 card-margin">
               <div class="card inset-neomo">
                 <div class="card-image">
                   <img

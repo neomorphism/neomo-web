@@ -177,4 +177,7 @@ export default {
 .tab ul.tab-content li.tab-content--list {
   overflow: visible;
 }
+.card {
+  overflow: visible;
+}
 </style>

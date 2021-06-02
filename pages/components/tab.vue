@@ -345,4 +345,12 @@ export default {
   box-shadow: inset -3px -3px 7px #ffffffe5,
     inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important;
 }
+
+.tab-content .outset-neomo {
+  box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #3a72d349 !important;
+}
+.tab-content .inset-neomo {
+  box-shadow: inset -3px -3px 7px #ffffffe5,
+    inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important;
+}
 </style>
