@@ -197,4 +197,9 @@ export default {
 select {
   margin: 0 10px 0 10px;
 }
+@media screen and (max-width: 750px) {
+  select {
+    margin-bottom: 5px;
+  }
+}
 </style>

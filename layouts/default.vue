@@ -566,7 +566,7 @@ pre .modal-content--sm span {
   margin-top: 12px;
 }
 .code-exam {
-  padding: 10px 80px 40px 80px !important;
+  padding: 10px 80px 40px 80px;
   margin-bottom: 40px;
 }
 .expanded {
@@ -607,6 +607,43 @@ pre .modal-content--sm span {
 @media screen and (max-width: 750px) {
   .header-version {
     display: none !important;
+  }
+  .tab {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .tab-content {
+    box-shadow: none !important;
+  }
+  .tab ul.tab-content {
+    width: 95vw;
+    padding: 0;
+  }
+  .tab ul.tab-content li.tab-content--list,
+  .main {
+    padding: 0;
+  }
+  .code-exam {
+    padding: 10px 20px 40px 20px;
+  }
+  .neomo .tab ul.tab-list li {
+    margin-bottom: 1rem;
+  }
+  .tab ul.tab-right li {
+    margin: 5px;
+  }
+  .badge {
+    display: inline-block;
+  }
+  .breadcrumb {
+    overflow-x: scroll;
+  }
+  .breadcrumb ul {
+    padding: 5px;
+  }
+  .card {
+    overflow-x: scroll;
   }
 }
 
