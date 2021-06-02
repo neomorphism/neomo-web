@@ -2,31 +2,9 @@
   <div>
     <!-- Header Start -->
     <header class="header neomo">
-      <!-- Header-menu Start -->
-      <button
-        data-modal-id="header-modal"
-        class="modal-button outset-neomo header-menu--button"
-        style="cursor: pointer"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-      <div
-        data-modal-id="header-modal"
-        class="modal"
-        style="overflow-y: hidden"
-      >
-        <div class="modal-content--sm outset-neomo modal-menu--content">
-          <span class="modal-close">&times;</span>
-          <div id="main-leftnav--hidden" class="container content-nav--hidden">
-            <Modalnav />
-          </div>
-        </div>
-      </div>
-      <!-- Header-menu End -->
-
       <!-- Header-logo Start -->
-      <div class="ml-1">
-        <a class="header-logo" href="/">
+      <div class="ml-1 header-logo">
+        <a class="header-logo--link" href="/">
           <div class="header-logo--icon">
             <img
               src="~/static/blacklogo.png"
@@ -47,7 +25,7 @@
       <div class="header-version">v2.0.1</div>
       <!-- Header-version End -->
 
-      <div class="mr-2" style="display: flex; position: relative">
+      <div class style="display: flex; position: relative">
         <!-- Header-searchbar Start -->
         <input
           class="input header-searchbar inset-neomo"
@@ -98,6 +76,28 @@
         </div>
         <!-- Header-searchbar End -->
       </div>
+
+      <!-- Header-menu Start -->
+      <button
+        data-modal-id="header-modal"
+        class="modal-button outset-neomo header-menu--button"
+        style="cursor: pointer"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div
+        data-modal-id="header-modal"
+        class="modal"
+        style="overflow-y: hidden"
+      >
+        <div class="modal-content--sm outset-neomo modal-menu--content">
+          <span class="modal-close">&times;</span>
+          <div id="main-leftnav--hidden" class="container content-nav--hidden">
+            <Modalnav />
+          </div>
+        </div>
+      </div>
+      <!-- Header-menu End -->
     </header>
     <!-- Header End -->
 
@@ -330,7 +330,7 @@ body {
   padding-left: 7vw;
   padding-right: 7vw;
 }
-.header-logo {
+.header-logo--link {
   padding: 8px 0 0 8px;
   min-width: 200px;
   display: flex;
@@ -367,11 +367,10 @@ body {
 
 .header-menu--button {
   display: none;
-  min-width: 40px;
-  width: 40px;
-  height: 40px;
-  margin: 10px 0 0 0;
-  padding: 5px;
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+  margin-top: 8px;
 }
 
 .header-freedemo {
@@ -493,6 +492,7 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #696969;
+  font-size: 1rem;
 }
 h2 {
   margin-top: 20px;
@@ -604,46 +604,42 @@ pre .modal-content--sm span {
     width: 85%;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+  .header {
+    justify-content: space-between;
+  }
   .header-version {
-    display: none !important;
+    display: none;
   }
-  .tab {
-    border: none;
+  .header-logo {
     margin: 0;
-    padding: 0;
+    width: 48px;
   }
-  .tab-content {
-    box-shadow: none !important;
+  .header-logo--link {
+    min-width: 0;
+    padding: 8px 0;
   }
-  .tab ul.tab-content {
-    width: 95vw;
-    padding: 0;
+  .header-logo--icon {
+    margin: 0;
   }
-  .tab ul.tab-content li.tab-content--list,
-  .main {
-    padding: 0;
+  .header-logo--name {
+    display: none;
+  }
+  .header-searchbar {
+    width: 50vw;
   }
   .code-exam {
-    padding: 10px 20px 40px 20px;
+    padding: 2rem;
   }
-  .neomo .tab ul.tab-list li {
-    margin-bottom: 1rem;
+  .main {
+    padding: 1rem;
   }
-  .tab ul.tab-right li {
-    margin: 5px;
+  #search-box {
+    width: 50vw;
+    margin: auto;
   }
-  .badge {
-    display: inline-block;
-  }
-  .breadcrumb {
-    overflow-x: scroll;
-  }
-  .breadcrumb ul {
-    padding: 5px;
-  }
-  .card {
-    overflow-x: scroll;
+  p {
+    font-size: 0.8rem;
   }
 }
 
