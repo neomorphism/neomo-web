@@ -103,7 +103,12 @@
 
       <!-- Template start -->
       <div class="template">
-        <a class="template-link" href="/template">Template</a>
+        <a
+          class="template-link"
+          href="https://neomorphism.github.io/template/"
+          target="_blank"
+          >Template</a
+        >
       </div>
       <!-- Template end -->
     </div>
@@ -211,12 +216,14 @@ export default {
 }
 
 .template {
-  margin: 5px 0 0 0;
-  padding: 6px 8px 6px 16px;
+  margin: 8px 0 0 0;
+  padding: 12px 8px 8px 8px;
   border-top: thin solid rgba(0, 0, 0, 0.07);
+  text-align: center;
 }
+
 .template-link {
-  color: #818181;
+  color: #666565;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
