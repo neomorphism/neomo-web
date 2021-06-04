@@ -22,6 +22,11 @@ export default {
       },
     ],
     link: [
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      {
+        href: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap",
+        rel: "stylesheet",
+      },
       {
         rel: "icon",
         type: "image/png",

@@ -22,7 +22,7 @@
       <!-- Header-logo End -->
 
       <!-- Header-version Start -->
-      <div class="header-version">v2.0.1</div>
+      <div class="header-version">v2.0.2</div>
       <!-- Header-version End -->
 
       <div class style="display: flex; position: relative">
@@ -316,6 +316,7 @@ html {
 body {
   margin: 0;
   height: 100%;
+  font-family: "Open Sans", sans-serif !important;
 }
 /* Header CSS Start */
 .header {
