@@ -9,7 +9,8 @@
             <img
               lazy-src="~/static/blacklogo.png"
               src="~/static/blacklogo.png"
-              style="height: 48px; width: auto"
+              width="48"
+              height="48"
               alt="logo"
             />
           </div>
@@ -17,7 +18,8 @@
             <img
               lazy-src="~/static/blacklogo.png"
               src="~/static/logoname.png"
-              style="height: auto; width: 150px"
+              width="150"
+              height="39"
               alt="logo name"
             />
           </div>
