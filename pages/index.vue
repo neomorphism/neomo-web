@@ -24,6 +24,7 @@
           src="mainlogo.png"
           width="350"
           height="350"
+          alt="mainlogo"
         />
       </div>
       <!-- Logo End-->

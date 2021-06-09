@@ -9,12 +9,14 @@
             <img
               src="~/static/blacklogo.png"
               style="height: 48px; width: auto"
+              alt="logo"
             />
           </div>
           <div class="header-logo--name">
             <img
               src="~/static/logoname.png"
               style="height: auto; width: 150px"
+              alt="logo name"
             />
           </div>
         </a>
