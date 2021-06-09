@@ -85,7 +85,12 @@
           <a href="https://github.com/neomorphism/neomo">Our Contributors</a>.
 
           <p class="mt-5">Currently v2.0.2.</p>
-          <p class="pb-10">Released under the <a>MIT License.</a></p>
+          <p class="pb-10">
+            Released under the
+            <a href="https://github.com/neomorphism/neomo/blob/main/LICENSE"
+              >MIT License.</a
+            >
+          </p>
         </div>
       </div>
     </footer>
