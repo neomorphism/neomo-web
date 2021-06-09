@@ -88,6 +88,7 @@
         data-modal-id="header-modal"
         class="modal-button outset-neomo header-menu--button"
         style="cursor: pointer"
+        aria-label="header button"
       >
         <i class="fas fa-bars"></i>
       </button>
