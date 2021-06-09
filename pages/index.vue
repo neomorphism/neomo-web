@@ -23,7 +23,7 @@
         <img
           lazy-src="mainlogo.png"
           src="mainlogo.png"
-          width="350"
+          width="343"
           height="350"
           alt="mainlogo"
         />
