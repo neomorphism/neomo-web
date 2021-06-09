@@ -170,7 +170,7 @@ export default {
     let page = location.href;
     if (location.href !== "https://neomo-ui.com/") {
       let pageSplit = page.split("/");
-      pageSplit = pageSplit[pageSplit.length - 1];
+      pageSplit = pageSplit[pageSplit.length - 2];
 
       if (pageSplit !== "" && pageSplit !== "template") {
         let pageID = document.getElementById(pageSplit);

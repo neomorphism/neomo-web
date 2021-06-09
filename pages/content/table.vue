@@ -21,6 +21,7 @@
               <button
                 data-collapse-id="collapse1"
                 class="button outset-neomo button-exam collapse"
+                aria-label="code button"
               >
                 <i class="fas fa-code"></i>
               </button>
@@ -70,6 +71,7 @@
               <button
                 data-collapse-id="collapse2"
                 class="button outset-neomo button-exam collapse"
+                aria-label="code button"
               >
                 <i class="fas fa-code"></i>
               </button>

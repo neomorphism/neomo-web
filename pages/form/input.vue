@@ -28,6 +28,7 @@
                 <button
                   data-collapse-id="collapse1"
                   class="button outset-neomo button-exam collapse"
+                  aria-label="code button"
                 >
                   <i class="fas fa-code"></i>
                 </button>
@@ -53,6 +54,7 @@
                 <button
                   data-collapse-id="collapse2"
                   class="button outset-neomo button-exam collapse"
+                  aria-label="code button"
                 >
                   <i class="fas fa-code"></i>
                 </button>
@@ -92,6 +94,7 @@
                 <button
                   data-collapse-id="collapse3"
                   class="button outset-neomo button-exam collapse"
+                  aria-label="code button"
                 >
                   <i class="fas fa-code"></i>
                 </button>
@@ -153,6 +156,7 @@
                 <button
                   data-collapse-id="collapse4"
                   class="button outset-neomo button-exam collapse"
+                  aria-label="code button"
                 >
                   <i class="fas fa-code"></i>
                 </button>
@@ -197,6 +201,7 @@
                 <button
                   data-collapse-id="collapse5"
                   class="button outset-neomo button-exam collapse"
+                  aria-label="code button"
                 >
                   <i class="fas fa-code"></i>
                 </button>
@@ -223,6 +228,7 @@
                 <button
                   data-collapse-id="collapse6"
                   class="button outset-neomo button-exam collapse"
+                  aria-label="code button"
                 >
                   <i class="fas fa-code"></i>
                 </button>
