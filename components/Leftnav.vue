@@ -107,6 +107,7 @@
           class="template-link"
           href="https://neomorphism.github.io/template/"
           target="_blank"
+          rel="noopener noreferrer"
           >Template</a
         >
       </div>

@@ -5,8 +5,8 @@
       <div style="width: 70vw; margin: auto">
         <div class="video-wrap">
           <iframe
-            title="neomo"
             id="video"
+            title="neomo"
             width="100%"
             height="315"
             src="https://www.youtube.com/embed/rST1gd_9Zl4?&autoplay=1&loop=1&&playlist=rST1gd_9Zl4"
@@ -67,27 +67,51 @@
     <footer class="footer">
       <div>
         <div class="footer-icon">
-          <a href="https://github.com/neomorphism/neomo">
+          <a
+            href="https://github.com/neomorphism/neomo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fab fa-github fa-2x"></i>
           </a>
-          <a href="https://www.facebook.com/neomoui"
+          <a
+            href="https://www.facebook.com/neomoui"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-facebook fa-2x ml-10 mr-10"></i
           ></a>
-          <a href="https://www.instagram.com/neomoui/"
+          <a
+            href="https://www.instagram.com/neomoui/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-instagram fa-2x"></i
           ></a>
         </div>
 
         <div class="mb-0 footer-font">
           Designed and built with all the love in the world by the
-          <a class="mt-3" href="https://github.com/neomorphism/neomo">AST </a>
+          <a
+            class="mt-3"
+            href="https://github.com/neomorphism/neomo"
+            target="_blank"
+            rel="noopener noreferrer"
+            >AST
+          </a>
           with the help of
-          <a href="https://github.com/neomorphism/neomo">Our Contributors</a>.
+          <a
+            href="https://github.com/neomorphism/neomo"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Our Contributors</a
+          >.
 
           <p class="mt-5">Currently v2.0.2.</p>
           <p class="pb-10">
             Released under the
-            <a href="https://github.com/neomorphism/neomo/blob/main/LICENSE"
+            <a
+              href="https://github.com/neomorphism/neomo/blob/main/LICENSE"
+              target="_blank"
+              rel="noopener noreferrer"
               >MIT License.</a
             >
           </p>
