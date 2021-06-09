@@ -7,6 +7,7 @@
         <a class="header-logo--link" href="/">
           <div class="header-logo--icon">
             <img
+              lazy-src="~/static/blacklogo.png"
               src="~/static/blacklogo.png"
               style="height: 48px; width: auto"
               alt="logo"
@@ -14,6 +15,7 @@
           </div>
           <div class="header-logo--name">
             <img
+              lazy-src="~/static/blacklogo.png"
               src="~/static/logoname.png"
               style="height: auto; width: 150px"
               alt="logo name"
