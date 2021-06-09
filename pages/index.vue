@@ -9,7 +9,8 @@
             title="neomo"
             width="100%"
             height="315"
-            src="https://www.youtube.com/embed/rST1gd_9Zl4?&autoplay=1&loop=1&&playlist=rST1gd_9Zl4"
+            loading="lazy"
+            src="https://www.youtube.com/embed/rST1gd_9Zl4?&autoplay=1&loop=1&playlist=rST1gd_9Zl4"
             frameborder="0"
             allow="encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -196,15 +197,16 @@ export default {};
 /* Footer CSS Start */
 .footer {
   background: #212121;
-  color: rgb(216, 216, 216);
+  color: rgb(177, 177, 177);
   text-align: center;
   bottom: 0;
   width: 100%;
 }
 .footer a {
-  color: gray;
+  color: #8a8a8a;
 }
 .footer p {
+  color: rgb(177, 177, 177);
   margin-bottom: 5px;
 }
 .footer-button {

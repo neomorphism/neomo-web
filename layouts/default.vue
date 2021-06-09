@@ -357,7 +357,7 @@ body {
   max-width: 10px;
   margin: auto;
   margin-left: 20px;
-  color: grey;
+  color: #707070;
   font-size: 0.86rem;
 }
 .header-searchbar {
