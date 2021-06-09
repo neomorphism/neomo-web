@@ -32,6 +32,11 @@ export default {
     ],
   },
 
+  cache: {
+    max: 1000,
+    maxAge: 1000 * 60 * 60,
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/node_modules/neomo/css/neomo.css"],
 
