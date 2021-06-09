@@ -5,6 +5,7 @@
       <div style="width: 70vw; margin: auto">
         <div class="video-wrap">
           <iframe
+            title="neomo"
             id="video"
             width="100%"
             height="315"
