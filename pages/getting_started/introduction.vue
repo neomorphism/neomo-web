@@ -117,7 +117,7 @@
 
 <style>
 a {
-  color: rgb(32, 133, 216);
+  color: #2a6fc9;
 }
 .commu-list li {
   margin-top: 7px;

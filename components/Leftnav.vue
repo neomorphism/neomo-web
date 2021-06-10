@@ -203,6 +203,7 @@ export default {
 }
 .navbar .toggle-content a {
   padding-bottom: 10px;
+  color: #707070;
 }
 .navbar .fa-caret-down {
   float: right;
@@ -215,9 +216,11 @@ export default {
 .card {
   padding: 10px;
 }
-
+button.toggle-button {
+  color: #666565;
+}
 button.toggle-button.active {
-  color: rgb(78, 108, 245) !important;
+  color: #2e2bf0 !important;
 }
 
 .template {
