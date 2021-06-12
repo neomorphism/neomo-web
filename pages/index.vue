@@ -68,33 +68,30 @@
     <footer class="footer">
       <div>
         <div class="footer-icon">
-          <button
-            class="footer-button"
+          <a
             href="https://github.com/neomorphism/neomo"
             aria-label="github"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-github fa-2x"></i>
-          </button>
-          <button
-            class="footer-button"
+            <i class="fab fa-github fa-3x footer-button"></i>
+          </a>
+          <a
             href="https://www.facebook.com/neomoui"
             aria-label="facebook"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-facebook fa-2x"></i>
-          </button>
-          <button
-            class="footer-button"
+            <i class="fab fa-facebook fa-3x footer-button"></i>
+          </a>
+          <a
             href="https://www.instagram.com/neomoui/"
             aria-label="instagram"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-instagram fa-2x"></i>
-          </button>
+            <i class="fab fa-instagram fa-3x footer-button"></i>
+          </a>
         </div>
 
         <div class="mb-0 footer-font">
@@ -214,7 +211,6 @@ export default {};
   background: none;
   border: none;
   color: rgb(153, 153, 153);
-  font-size: 1.3rem;
   cursor: pointer;
 }
 .footer-button:hover {
