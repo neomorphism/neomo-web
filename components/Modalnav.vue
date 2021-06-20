@@ -80,6 +80,7 @@
         <div class="toggle-content">
           <a id="checkbox2" href="/form/checkbox">Checkbox</a>
           <a id="file2" href="/form/file">File</a>
+          <a id="floatinglabel2" href="/form/floatinglabel">Floatinglabel</a>
           <a id="input2" href="/form/input">Input</a>
           <a id="radio2" href="/form/radio">Radio</a>
           <a id="range2" href="/form/range">Range</a>
@@ -171,7 +172,7 @@ export default {
     let page = location.href;
     if (location.href !== "https://neomo-ui.com/") {
       let pageSplit = page.split("/");
-      pageSplit = pageSplit[pageSplit.length - 1] + "2";
+      pageSplit = pageSplit[pageSplit.length - 2] + "2";
 
       if (pageSplit !== "" && pageSplit !== "template2" && pageSplit !== "2") {
         let pageID = document.getElementById(pageSplit);
