@@ -6407,10 +6407,10 @@ neo-async@^2.5.0, neo-async@^2.6.1, neo-async@^2.6.2:
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-neomo@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/neomo/-/neomo-2.0.2.tgz#8e147872b7c8bfbcd13ecd36e27e0e9fc7d7e54a"
-  integrity sha512-OdJlFWpizKcZvExoWvkptCO4/srdg/pEUirfyAxjBcNrwH5wFlJtA646F3hFHzIfMGwE+1C2gnIxCFcZ3J4AYA==
+neomo@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/neomo/-/neomo-2.1.0.tgz#01b873e4e4027904b96b9e52236c24221a67bbc5"
+  integrity sha512-ywQCunsrhPy1AFR2LRteeT8c+dPZ0OHyOG/PShi6R4kXB52dcRIuBwgqNfgQfIexAypu9cc0hiBWGENtYulddg==
 
 no-case@^2.2.0:
   version "2.3.2"
