@@ -163,6 +163,7 @@ export default {
       searchForm: [
         ["checkbox", "/form/checkbox"],
         ["file", "/form/file"],
+        ["floatinglabel", "/form/floatinglabel"],
         ["input", "/form/input"],
         ["labels", "/form/labels"],
         ["radio", "/form/radio"],
