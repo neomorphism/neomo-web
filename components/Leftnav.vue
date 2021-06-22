@@ -55,6 +55,7 @@
           <a id="spinner" href="/components/spinner">Spinner</a>
           <a id="tab" href="/components/tab">Tab</a>
           <a id="toast" href="/components/toast">Toast</a>
+          <a id="tooltip" href="/components/tooltip">Tooltip</a>
         </div>
       </div>
       <!-- Components list end -->
@@ -171,7 +172,7 @@ export default {
     let page = location.href;
     if (location.href !== "https://neomo-ui.com/") {
       let pageSplit = page.split("/");
-      pageSplit = pageSplit[pageSplit.length - 2];
+      pageSplit = pageSplit[pageSplit.length - 1];
 
       if (pageSplit !== "" && pageSplit !== "template") {
         let pageID = document.getElementById(pageSplit);
