@@ -56,6 +56,12 @@
         </button>
         <button
           class="button outset-neomo content-btn--outset"
+          onclick="location.href='https://github.com/neomorphism/neomo'"
+        >
+          <span class="ma-0 content-btn--font">GITHUB</span>
+        </button>
+        <button
+          class="button outset-neomo content-btn--outset"
           onclick="location.href='https://github.com/neomorphism/neomo/archive/refs/tags/v2.1.0.zip'"
         >
           <span class="ma-0 content-btn--font">DOWNLOAD</span>
@@ -172,9 +178,9 @@ export default {};
   color: #0063e4 !important;
 }
 .content-btn--outset {
-  width: 230px;
+  width: 210px;
   min-height: 60px;
-  margin: 10px 50px 0 50px;
+  margin: 2rem 2rem 1rem 2rem;
   color: #0063e4 !important;
   border-radius: 100px;
   border: none;
